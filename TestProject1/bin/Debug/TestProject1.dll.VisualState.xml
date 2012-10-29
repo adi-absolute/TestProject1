@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ShowCheckBoxes="false">
+  <TopNode>[0-1022]C:\Personal\Go\TestProject1\TestProject1\bin\Debug\TestProject1.dll</TopNode>
+  <SelectedNode>[0-1022]C:\Personal\Go\TestProject1\TestProject1\bin\Debug\TestProject1.dll</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1022]C:\Personal\Go\TestProject1\TestProject1\bin\Debug\TestProject1.dll" Expanded="true" />
+    <Node UniqueName="[0-1023]Project1" Expanded="true" />
+    <Node UniqueName="[0-1000]Project1.PlayerTest" Expanded="true" />
+    <Node UniqueName="[0-1002]Project1.RankTests" Expanded="true" />
+  </Nodes>
+</VisualState>
