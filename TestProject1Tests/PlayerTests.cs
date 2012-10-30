@@ -53,15 +53,17 @@ namespace Project1
         }
 
         [Test]
-        public void SetNewPlayerRankThroughConstructor()
+        public void SetNewPlayerThroughConstructor()
         {
-            Player p = new Player(eRankNumber.rank3kyu, eRungPosition.rungPositionBottom);
+            string name = "Aditya";
+            Player p = new Player(name, eRankNumber.rank3kyu, eRungPosition.rungPositionBottom);
 
             eRankNumber rank = p.GetRankNumber();
             eRungPosition rung = p.GetRungPosition();
 
             Assert.AreEqual(eRankNumber.rank3kyu, rank);
             Assert.AreEqual(eRungPosition.rungPositionBottom, rung);
+            Assert.AreEqual(name, p.get_name());
         }
     }
 }

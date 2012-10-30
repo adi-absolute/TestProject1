@@ -18,8 +18,9 @@ namespace Project1
             myRank.set_RungPosition(eRungPosition.rungPositionMiddle);
         }
 
-        public Player(eRankNumber rank, eRungPosition rung)
+        public Player(string name, eRankNumber rank, eRungPosition rung)
         {
+            myName = name;
             myRank.set_RankNumber(rank);
             myRank.set_RungPosition(rung);
         }

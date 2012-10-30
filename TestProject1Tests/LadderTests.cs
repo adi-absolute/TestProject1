@@ -37,5 +37,33 @@ namespace Project1
             
             Assert.AreEqual(1, ladder.get_NumberOfPlayers());
         }
+
+        [Test]
+        public void GetPlayerList()
+        {
+            Ladder ladder = new Ladder();
+
+            string name = "Test";
+            ladder.AddPlayer(name, eRankNumber.rank10kyu, eRungPosition.rungPositionMiddle);
+
+            List<Player> pList = ladder.get_PlayerList();
+
+            int numberOfPlayers = pList.Count;
+            Assert.AreEqual(1, numberOfPlayers);
+        }
+
+        [Test]
+        public void GetIDofLastPlayerInList()
+        {
+            Ladder ladder = new Ladder();
+
+            string name = "Test";
+            ladder.AddPlayer(name, eRankNumber.rank10kyu, eRungPosition.rungPositionMiddle);
+
+            List<Player> pList = ladder.get_PlayerList();
+
+            UInt16 id = pList.ElementAt(0).get_ID();
+            Assert.AreEqual(1, id);
+        }
     }
 }

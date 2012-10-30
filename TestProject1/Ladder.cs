@@ -20,9 +20,18 @@ namespace Project1
             myNumberOfPlayers = players;
         }
 
+        public List<Player> get_PlayerList()
+        {
+            return myPlayerList;
+        }
+
         public void AddPlayer(string name, eRankNumber rank, eRungPosition rung)
         {
             myNumberOfPlayers++;
+            Player newPlayer = new Player(name, rank, rung);
+            newPlayer.set_ID(myNumberOfPlayers);
+
+            myPlayerList.Add(newPlayer);
         }
     }
 }
