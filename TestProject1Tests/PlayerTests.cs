@@ -22,6 +22,17 @@ namespace Project1
         }
 
         [Test]
+        public void SetAndGetPlayerID()
+        {
+            Player p = new Player();
+
+            UInt16 id = 42;
+            p.set_ID(id);
+
+            Assert.AreEqual(id, p.get_ID());
+        }
+
+        [Test]
         public void NewPlayerDefaultRankIsThirtySixKyu()
         {
             Player p = new Player();

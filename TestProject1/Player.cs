@@ -9,6 +9,7 @@ namespace Project1
     public class Player
     {
         string myName;
+        UInt16 myID;
         Rank myRank = new Rank();
 
         public Player()
@@ -32,6 +33,16 @@ namespace Project1
         public void set_name(string name)
         {
             myName = name;
+        }
+
+        public UInt16 get_ID()
+        {
+            return myID;
+        }
+
+        public void set_ID(UInt16 id)
+        {
+            myID = id;
         }
 
         public eRankNumber GetRankNumber()
