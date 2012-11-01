@@ -25,13 +25,38 @@ namespace Project1
             return myPlayerList;
         }
 
-        public void AddPlayer(string name, eRankNumber rank, eRungPosition rung)
+        public bool AddPlayer(string name, eRankNumber rank, eRungPosition rung)
         {
             myNumberOfPlayers++;
             Player newPlayer = new Player(name, rank, rung);
             newPlayer.set_ID(myNumberOfPlayers);
 
             myPlayerList.Add(newPlayer);
+
+            return true;
+        }
+
+        public bool RemovePlayer(UInt16 id)
+        {
+            Player found = myPlayerList.Find(f => f.get_ID() == id);
+
+            myPlayerList.Remove(found);
+
+            return false;
+        }
+
+        public List<Player> findPlayers(string partial)
+        {
+            List<Player> pList = myPlayerList.FindAll(f => true == f.get_name().Contains(partial));
+
+            return pList;
+        }
+
+        public List<Player> findPlayers(eRankNumber rank)
+        {
+            List<Player> pList = myPlayerList.FindAll(f => rank == f.GetRankNumber());
+
+            return pList;
         }
     }
 }

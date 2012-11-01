@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
-  <TopNode>[0-1025]C:\Personal\Go\TestProject1\TestProject1Tests\bin\Debug\ClassLibrary1.dll</TopNode>
-  <SelectedNode>[0-1025]C:\Personal\Go\TestProject1\TestProject1Tests\bin\Debug\ClassLibrary1.dll</SelectedNode>
+  <TopNode>[0-1032]C:\Personal\Go\TestProject1\TestProject1Tests\bin\Debug\ClassLibrary1.dll</TopNode>
+  <SelectedNode>[0-1032]C:\Personal\Go\TestProject1\TestProject1Tests\bin\Debug\ClassLibrary1.dll</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
-    <Node UniqueName="[0-1025]C:\Personal\Go\TestProject1\TestProject1Tests\bin\Debug\ClassLibrary1.dll" Expanded="true" />
-    <Node UniqueName="[0-1026]Project1" Expanded="true" />
-    <Node UniqueName="[0-1020]Project1.PlayerTests" Expanded="true" />
-    <Node UniqueName="[0-1000]Project1.RankTests" Expanded="true" />
+    <Node UniqueName="[0-1032]C:\Personal\Go\TestProject1\TestProject1Tests\bin\Debug\ClassLibrary1.dll" Expanded="true" />
+    <Node UniqueName="[0-1033]Project1" Expanded="true" />
+    <Node UniqueName="[0-1000]Project1.LadderTests" Expanded="true" />
+    <Node UniqueName="[0-1026]Project1.PlayerTests" Expanded="true" />
+    <Node UniqueName="[0-1006]Project1.RankTests" Expanded="true" />
   </Nodes>
 </VisualState>
