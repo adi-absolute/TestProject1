@@ -19,15 +19,6 @@ namespace Project1
         }
 
         [Test]
-        public void SetAndGetNumberOfPlayers()
-        {
-            Ladder ladder = new Ladder();
-
-            ladder.set_NumberOfPlayers(4);
-            Assert.AreEqual(4, ladder.get_NumberOfPlayers());
-        }
-
-        [Test]
         public void AddPlayerToEmptyList()
         {
             Ladder ladder = new Ladder();
@@ -187,5 +178,72 @@ namespace Project1
             Assert.AreEqual(name3, listName);
         }
 
+        [Test]
+        public void DeletingLastPlayerInListAndAddingPlayerAfterwards()
+        {
+            Ladder ladder = new Ladder();
+
+            string name1 = "Test1";
+            string name2 = "Test2";
+            string name3 = "Test3";
+            string name4 = "Test4";
+            eRankNumber rank1 = eRankNumber.rank5Dan;
+            eRankNumber rank2 = eRankNumber.rank4Dan;
+            eRankNumber rank3 = eRankNumber.rank3Dan;
+            eRankNumber rank4 = eRankNumber.rank2Dan;
+
+            ladder.AddPlayer(name1, rank1, eRungPosition.rungPositionMiddle);
+            ladder.AddPlayer(name2, rank2, eRungPosition.rungPositionMiddle);
+            ladder.AddPlayer(name3, rank3, eRungPosition.rungPositionMiddle);
+            ladder.RemovePlayer(3);
+            ladder.AddPlayer(name4, rank4, eRungPosition.rungPositionMiddle);
+            
+            List<Player> pList = ladder.get_PlayerList();
+
+            Assert.AreEqual(3, pList.Count);
+            string listName = pList.ElementAt(0).get_name();
+            Assert.AreEqual(name1, listName);
+            listName = pList.ElementAt(2).get_name();
+            Assert.AreEqual(name4, listName);
+        }
+
+        [Test]
+        public void NewLadderHasNoGames()
+        {
+            Ladder ladder = new Ladder();
+
+            UInt16 nGames = ladder.get_NumberOfGames();
+
+            Assert.AreEqual(0, nGames);
+        }
+
+        [Test]
+        public void AddingGamesIncreasesTheCounter()
+        {
+            Ladder ladder = new Ladder();
+
+            Game g = new Game();
+            ladder.AddGame(g);
+            UInt16 nGames = ladder.get_NumberOfGames();
+            Assert.AreEqual(1, nGames);
+
+            ladder.AddGame(g);
+            nGames = ladder.get_NumberOfGames();
+            Assert.AreEqual(2, nGames);
+        }
+
+        [Test]
+        public void AddingGamesAutomaticallyAddsGameID()
+        {
+            Ladder ladder = new Ladder();
+
+            Game g = new Game(0, 5, 3, 2, eResult.whiteWin);
+            ladder.AddGame(g);
+            UInt16 nGames = ladder.get_NumberOfGames();
+            Assert.AreEqual(1, nGames);
+
+            Game g2 = ladder.get_Game(1);
+            Assert.AreEqual(1, g2.get_GameID());
+        }
     }
 }

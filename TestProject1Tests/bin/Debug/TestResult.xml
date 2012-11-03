@@ -1,54 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\Personal\Go\TestProject1\TestProject1Tests\bin\Debug\ClassLibrary1.dll" total="36" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2012-11-01" time="00:42:13">
+<test-results name="C:\Personal\Go\TestProject1\TestProject1Tests\bin\Debug\ClassLibrary1.dll" total="44" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2012-11-03" time="00:15:59">
   <environment nunit-version="2.5.10.11092" clr-version="2.0.50727.5456" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.5.10\bin\net-2.0" machine-name="ADI" user="pc1" user-domain="ADI" />
   <culture-info current-culture="en-GB" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="C:\Personal\Go\TestProject1\TestProject1Tests\bin\Debug\ClassLibrary1.dll" executed="True" result="Success" success="True" time="0.316" asserts="0">
+  <test-suite type="Assembly" name="C:\Personal\Go\TestProject1\TestProject1Tests\bin\Debug\ClassLibrary1.dll" executed="True" result="Success" success="True" time="0.375" asserts="0">
     <results>
-      <test-suite type="Namespace" name="Project1" executed="True" result="Success" success="True" time="0.302" asserts="0">
+      <test-suite type="Namespace" name="Project1" executed="True" result="Success" success="True" time="0.360" asserts="0">
         <results>
-          <test-suite type="TestFixture" name="LadderTests" executed="True" result="Success" success="True" time="0.161" asserts="0">
+          <test-suite type="TestFixture" name="GameTests" executed="True" result="Success" success="True" time="0.106" asserts="0">
             <results>
-              <test-case name="Project1.LadderTests.AddPlayerToEmptyList" executed="True" result="Success" success="True" time="0.062" asserts="1" />
-              <test-case name="Project1.LadderTests.DeletingMiddlePlayerInListKeepsOthers" executed="True" result="Success" success="True" time="0.008" asserts="3" />
+              <test-case name="Project1.GameTests.GetAndSetGameDetailsThroughConstructor" executed="True" result="Success" success="True" time="0.071" asserts="5" />
+              <test-case name="Project1.GameTests.GetAndSetGameIDs" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="Project1.GameTests.GetAndSetKome" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="Project1.GameTests.GetAndSetPlayerIDs" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+              <test-case name="Project1.GameTests.GetAndSetResult" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="LadderTests" executed="True" result="Success" success="True" time="0.100" asserts="0">
+            <results>
+              <test-case name="Project1.LadderTests.AddingGamesAutomaticallyAddsGameID" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+              <test-case name="Project1.LadderTests.AddingGamesIncreasesTheCounter" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+              <test-case name="Project1.LadderTests.AddPlayerToEmptyList" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+              <test-case name="Project1.LadderTests.DeletingLastPlayerInListAndAddingPlayerAfterwards" executed="True" result="Success" success="True" time="0.008" asserts="3" />
+              <test-case name="Project1.LadderTests.DeletingMiddlePlayerInListKeepsOthers" executed="True" result="Success" success="True" time="0.001" asserts="3" />
               <test-case name="Project1.LadderTests.FindMultiplePlayersFromListWithSameRank" executed="True" result="Success" success="True" time="0.002" asserts="3" />
-              <test-case name="Project1.LadderTests.FindPlayerFromListWithName" executed="True" result="Success" success="True" time="0.014" asserts="2" />
-              <test-case name="Project1.LadderTests.FindPlayerFromListWithRank" executed="True" result="Success" success="True" time="0.001" asserts="2" />
-              <test-case name="Project1.LadderTests.GetIDofLastPlayerInList" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="Project1.LadderTests.FindPlayerFromListWithName" executed="True" result="Success" success="True" time="0.015" asserts="2" />
+              <test-case name="Project1.LadderTests.FindPlayerFromListWithRank" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+              <test-case name="Project1.LadderTests.GetIDofLastPlayerInList" executed="True" result="Success" success="True" time="0.000" asserts="1" />
               <test-case name="Project1.LadderTests.GetNameofLastPlayerInList" executed="True" result="Success" success="True" time="0.001" asserts="1" />
-              <test-case name="Project1.LadderTests.GetPlayerList" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="Project1.LadderTests.GetPlayerList" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="Project1.LadderTests.NewLadderHasNoGames" executed="True" result="Success" success="True" time="0.001" asserts="1" />
               <test-case name="Project1.LadderTests.NumberOfPlayersIsZeroWhenLadderIsCreated" executed="True" result="Success" success="True" time="0.000" asserts="1" />
-              <test-case name="Project1.LadderTests.RemovePlayerDeletesPlayerFromList" executed="True" result="Success" success="True" time="0.003" asserts="1" />
-              <test-case name="Project1.LadderTests.SetAndGetNumberOfPlayers" executed="True" result="Success" success="True" time="0.001" asserts="1" />
-              <test-case name="Project1.LadderTests.SuccessfulAdditionOfPlayerReturnsTrue" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+              <test-case name="Project1.LadderTests.RemovePlayerDeletesPlayerFromList" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="Project1.LadderTests.SuccessfulAdditionOfPlayerReturnsTrue" executed="True" result="Success" success="True" time="0.001" asserts="1" />
             </results>
           </test-suite>
           <test-suite type="TestFixture" name="PlayerTests" executed="True" result="Success" success="True" time="0.025" asserts="0">
             <results>
-              <test-case name="Project1.PlayerTests.NewPlayerDefaultRankIsThirtySixKyu" executed="True" result="Success" success="True" time="0.003" asserts="1" />
+              <test-case name="Project1.PlayerTests.NewPlayerDefaultRankIsThirtySixKyu" executed="True" result="Success" success="True" time="0.001" asserts="1" />
               <test-case name="Project1.PlayerTests.NewPlayerDefaultRungIsMiddleRung" executed="True" result="Success" success="True" time="0.001" asserts="1" />
-              <test-case name="Project1.PlayerTests.SetAndGetPlayerID" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="Project1.PlayerTests.SetAndGetPlayerID" executed="True" result="Success" success="True" time="0.001" asserts="1" />
               <test-case name="Project1.PlayerTests.SetAndGetPlayerName" executed="True" result="Success" success="True" time="0.000" asserts="1" />
-              <test-case name="Project1.PlayerTests.SetNewPlayerThroughConstructor" executed="True" result="Success" success="True" time="0.000" asserts="3" />
+              <test-case name="Project1.PlayerTests.SetNewPlayerThroughConstructor" executed="True" result="Success" success="True" time="0.001" asserts="3" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="RankTests" executed="True" result="Success" success="True" time="0.103" asserts="0">
+          <test-suite type="TestFixture" name="RankTests" executed="True" result="Success" success="True" time="0.109" asserts="0">
             <results>
               <test-case name="Project1.RankTests.DefaultRankAndRungPositionForNoRank" executed="True" result="Success" success="True" time="0.001" asserts="2" />
               <test-case name="Project1.RankTests.DontMoveDownWhenAtBottomOfRank" executed="True" result="Success" success="True" time="0.001" asserts="2" />
               <test-case name="Project1.RankTests.DontMoveUpLadderMaxRankAndRung" executed="True" result="Success" success="True" time="0.001" asserts="2" />
-              <test-case name="Project1.RankTests.MoveDownHighRankDownARung" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+              <test-case name="Project1.RankTests.MoveDownHighRankDownARung" executed="True" result="Success" success="True" time="0.000" asserts="2" />
               <test-case name="Project1.RankTests.MoveDownHighRankSameRung" executed="True" result="Success" success="True" time="0.001" asserts="6" />
-              <test-case name="Project1.RankTests.MoveDownLowRankDownARung" executed="True" result="Success" success="True" time="0.000" asserts="2" />
-              <test-case name="Project1.RankTests.MoveDownLowRankSameRung" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+              <test-case name="Project1.RankTests.MoveDownLowRankDownARung" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+              <test-case name="Project1.RankTests.MoveDownLowRankSameRung" executed="True" result="Success" success="True" time="0.000" asserts="2" />
               <test-case name="Project1.RankTests.MoveDownMidRankDownARung" executed="True" result="Success" success="True" time="0.001" asserts="2" />
               <test-case name="Project1.RankTests.MoveDownMidRankSameRung" executed="True" result="Success" success="True" time="0.001" asserts="4" />
               <test-case name="Project1.RankTests.MoveUpLadderHighRankSameRung" executed="True" result="Success" success="True" time="0.001" asserts="6" />
-              <test-case name="Project1.RankTests.MoveUpLadderHighRankUpARung" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+              <test-case name="Project1.RankTests.MoveUpLadderHighRankUpARung" executed="True" result="Success" success="True" time="0.000" asserts="2" />
               <test-case name="Project1.RankTests.MoveUpLadderLowRankSameRung" executed="True" result="Success" success="True" time="0.001" asserts="2" />
               <test-case name="Project1.RankTests.MoveUpLadderLowRankUpARung" executed="True" result="Success" success="True" time="0.001" asserts="2" />
-              <test-case name="Project1.RankTests.MoveUpLadderMiddleRankSameRung" executed="True" result="Success" success="True" time="0.001" asserts="4" />
-              <test-case name="Project1.RankTests.MoveUpLadderMiddleRankUpARung" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+              <test-case name="Project1.RankTests.MoveUpLadderMiddleRankSameRung" executed="True" result="Success" success="True" time="0.000" asserts="4" />
+              <test-case name="Project1.RankTests.MoveUpLadderMiddleRankUpARung" executed="True" result="Success" success="True" time="0.000" asserts="2" />
               <test-case name="Project1.RankTests.SetAndGetRankNumber" executed="True" result="Success" success="True" time="0.001" asserts="1" />
               <test-case name="Project1.RankTests.SetAndGetRungPosition" executed="True" result="Success" success="True" time="0.000" asserts="1" />
               <test-case name="Project1.RankTests.SetRankAndRungThroughConstructor" executed="True" result="Success" success="True" time="0.001" asserts="2" />

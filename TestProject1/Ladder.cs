@@ -7,17 +7,14 @@ namespace Project1
 {
     public class Ladder
     {
-        UInt16 myNumberOfPlayers;
+        UInt16 myLastPlayerID;
+        UInt16 myLastGameID;
         List<Player> myPlayerList = new List<Player>();
+        List<Game> myGameList = new List<Game>();
 
         public UInt16 get_NumberOfPlayers()
         {
-            return myNumberOfPlayers;
-        }
-
-        public void set_NumberOfPlayers(UInt16 players)
-        {
-            myNumberOfPlayers = players;
+            return (UInt16)myPlayerList.Count;
         }
 
         public List<Player> get_PlayerList()
@@ -27,36 +24,52 @@ namespace Project1
 
         public bool AddPlayer(string name, eRankNumber rank, eRungPosition rung)
         {
-            myNumberOfPlayers++;
+            myLastPlayerID++;
+
             Player newPlayer = new Player(name, rank, rung);
-            newPlayer.set_ID(myNumberOfPlayers);
+            newPlayer.set_ID(myLastPlayerID);
 
             myPlayerList.Add(newPlayer);
-
             return true;
         }
 
         public bool RemovePlayer(UInt16 id)
         {
             Player found = myPlayerList.Find(f => f.get_ID() == id);
-
             myPlayerList.Remove(found);
-
             return false;
         }
 
         public List<Player> findPlayers(string partial)
         {
             List<Player> pList = myPlayerList.FindAll(f => true == f.get_name().Contains(partial));
-
             return pList;
         }
 
         public List<Player> findPlayers(eRankNumber rank)
         {
             List<Player> pList = myPlayerList.FindAll(f => rank == f.GetRankNumber());
-
             return pList;
+        }
+
+        public UInt16 get_NumberOfGames()
+        {
+            return (UInt16)myGameList.Count;
+        }
+
+        public void AddGame(Game game)
+        {
+            myLastGameID++;
+
+            game.set_GameID(myLastGameID);
+            myGameList.Add(game);
+        }
+
+        public Game get_Game(UInt16 id)
+        {
+            Game game = myGameList.Find(g => id == g.get_GameID());
+            
+            return game;
         }
     }
 }
