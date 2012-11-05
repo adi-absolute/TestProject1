@@ -20,9 +20,14 @@ namespace Project1
         {
             Player p = new Player();
 
-            p.set_name(textBox1.Text);
+            p.myName = textBox1.Text;
 
-            button1.Text = p.get_name();
+            button1.Text = p.myName;
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

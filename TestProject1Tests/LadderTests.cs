@@ -53,7 +53,7 @@ namespace Project1
 
             List<Player> pList = ladder.get_PlayerList();
 
-            UInt16 id = pList.ElementAt(0).get_ID();
+            UInt16 id = pList.ElementAt(0).myID;
             Assert.AreEqual(1, id);
         }
 
@@ -67,7 +67,7 @@ namespace Project1
 
             List<Player> pList = ladder.get_PlayerList();
 
-            string listName = pList.ElementAt(0).get_name();
+            string listName = pList.ElementAt(0).myName;
             Assert.AreEqual(name, listName);
         }
 
@@ -107,7 +107,7 @@ namespace Project1
             List<Player> pList = ladder.findPlayers(partialName);
             
             Assert.IsNotEmpty(pList);
-            string listName = pList.ElementAt(0).get_name();
+            string listName = pList.ElementAt(0).myName;
             Assert.AreEqual(name, listName);
         }
 
@@ -123,7 +123,7 @@ namespace Project1
             List<Player> pList = ladder.findPlayers(rank);
 
             Assert.IsNotEmpty(pList);
-            string listName = pList.ElementAt(0).get_name();
+            string listName = pList.ElementAt(0).myName;
             Assert.AreEqual(name, listName);
         }
 
@@ -146,9 +146,9 @@ namespace Project1
             List<Player> pList = ladder.findPlayers(rank1);
 
             Assert.AreEqual(2, pList.Count);
-            string listName = pList.ElementAt(0).get_name();
+            string listName = pList.ElementAt(0).myName;
             Assert.AreEqual(name1, listName);
-            listName = pList.ElementAt(1).get_name();
+            listName = pList.ElementAt(1).myName;
             Assert.AreEqual(name3, listName);
         }
 
@@ -172,9 +172,9 @@ namespace Project1
             List<Player> pList = ladder.get_PlayerList();
 
             Assert.AreEqual(2, pList.Count);
-            string listName = pList.ElementAt(0).get_name();
+            string listName = pList.ElementAt(0).myName;
             Assert.AreEqual(name1, listName);
-            listName = pList.ElementAt(1).get_name();
+            listName = pList.ElementAt(1).myName;
             Assert.AreEqual(name3, listName);
         }
 
@@ -201,9 +201,9 @@ namespace Project1
             List<Player> pList = ladder.get_PlayerList();
 
             Assert.AreEqual(3, pList.Count);
-            string listName = pList.ElementAt(0).get_name();
+            string listName = pList.ElementAt(0).myName;
             Assert.AreEqual(name1, listName);
-            listName = pList.ElementAt(2).get_name();
+            listName = pList.ElementAt(2).myName;
             Assert.AreEqual(name4, listName);
         }
 
@@ -243,7 +243,7 @@ namespace Project1
             Assert.AreEqual(1, nGames);
 
             Game g2 = ladder.get_Game(1);
-            Assert.AreEqual(1, g2.get_GameID());
+            Assert.AreEqual(1, g2.GameID);
         }
     }
 }

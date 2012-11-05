@@ -16,9 +16,9 @@ namespace Project1
             Player p = new Player();
 
             string tName = "Aditya";
-            p.set_name(tName);
+            p.myName = tName;
 
-            Assert.AreEqual(tName, p.get_name());
+            Assert.AreEqual(tName, p.myName);
         }
 
         [Test]
@@ -27,9 +27,9 @@ namespace Project1
             Player p = new Player();
 
             UInt16 id = 42;
-            p.set_ID(id);
+            p.myID = id;
 
-            Assert.AreEqual(id, p.get_ID());
+            Assert.AreEqual(id, p.myID);
         }
 
         [Test]
@@ -63,7 +63,7 @@ namespace Project1
 
             Assert.AreEqual(eRankNumber.rank3kyu, rank);
             Assert.AreEqual(eRungPosition.rungPositionBottom, rung);
-            Assert.AreEqual(name, p.get_name());
+            Assert.AreEqual(name, p.myName);
         }
     }
 }

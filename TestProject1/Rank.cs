@@ -34,97 +34,77 @@ namespace Project1
     
     public class Rank
     {
-        eRankNumber myRankNumber;
-        eRungPosition myRungPosition;
+        public eRankNumber RankNumber { get; set; }
+        public eRungPosition RungPosition { get; set; }
 
         public Rank()
         {
-            myRankNumber = eRankNumber.rank36kyu;
-            myRungPosition = eRungPosition.rungPositionMiddle;
+            RankNumber = eRankNumber.rank36kyu;
+            RungPosition = eRungPosition.rungPositionMiddle;
         }
 
         public Rank(eRankNumber rank)
         {
-            myRankNumber = rank;
-            myRungPosition = eRungPosition.rungPositionMiddle;
+            RankNumber = rank;
+            RungPosition = eRungPosition.rungPositionMiddle;
         }
 
         public Rank(eRankNumber rank, eRungPosition rung)
         {
-            myRankNumber = rank;
-            myRungPosition = rung;
-        }
-
-        public void set_RankNumber(eRankNumber rank)
-        {
-            myRankNumber = rank;
-        }
-
-        public eRankNumber get_RankNumber()
-        {
-            return myRankNumber;
-        }
-
-        public void set_RungPosition(eRungPosition rung)
-        {
-            myRungPosition = rung;
-        }
-
-        public eRungPosition get_RungPosition()
-        {
-            return myRungPosition;
+            RankNumber = rank;
+            RungPosition = rung;
         }
 
         public void MoveUp()
         {
-            if (myRungPosition == eRungPosition.rungPositionTop)
+            if (RungPosition == eRungPosition.rungPositionTop)
             {
-                if (myRankNumber != eRankNumber.rank9Dan)
+                if (RankNumber != eRankNumber.rank9Dan)
                 {
-                    myRankNumber--;
+                    RankNumber--;
 
-                    if (myRankNumber < eRankNumber.rank1kyu)
-                        myRungPosition = eRungPosition.rungPositionBottom2;
-                    else if (myRankNumber < eRankNumber.rank19kyu)
-                        myRungPosition = eRungPosition.rungPositionBottom;
+                    if (RankNumber < eRankNumber.rank1kyu)
+                        RungPosition = eRungPosition.rungPositionBottom2;
+                    else if (RankNumber < eRankNumber.rank19kyu)
+                        RungPosition = eRungPosition.rungPositionBottom;
                     else
-                        myRungPosition = eRungPosition.rungPositionMiddle;
+                        RungPosition = eRungPosition.rungPositionMiddle;
                 }
             }
             else
-                myRungPosition--;
+                RungPosition--;
         }
 
         public void MoveDown()
         {
-            if ((myRankNumber == eRankNumber.rank36kyu)
-                && (myRungPosition == eRungPosition.rungPositionMiddle))
+            if ((RankNumber == eRankNumber.rank36kyu)
+                && (RungPosition == eRungPosition.rungPositionMiddle))
                 return;
 
-            if (myRankNumber > eRankNumber.rank18kyu)
+            if (RankNumber > eRankNumber.rank18kyu)
             {
-                if (myRungPosition == eRungPosition.rungPositionMiddle)
-                    myRungPosition = eRungPosition.rungPositionTop;
+                if (RungPosition == eRungPosition.rungPositionMiddle)
+                    RungPosition = eRungPosition.rungPositionTop;
                 else
-                    myRungPosition++;
+                    RungPosition++;
             }
-            else if (myRankNumber > eRankNumber.rank1Dan)
+            else if (RankNumber > eRankNumber.rank1Dan)
             {
-                if (myRungPosition == eRungPosition.rungPositionBottom)
-                    myRungPosition = eRungPosition.rungPositionTop;
+                if (RungPosition == eRungPosition.rungPositionBottom)
+                    RungPosition = eRungPosition.rungPositionTop;
                 else
-                    myRungPosition++;
+                    RungPosition++;
             }
             else
             {
-                if (myRungPosition == eRungPosition.rungPositionBottom2)
-                    myRungPosition = eRungPosition.rungPositionTop;
+                if (RungPosition == eRungPosition.rungPositionBottom2)
+                    RungPosition = eRungPosition.rungPositionTop;
                 else
-                    myRungPosition++;
+                    RungPosition++;
             }
 
-            if (myRungPosition == eRungPosition.rungPositionTop)
-                myRankNumber++;
+            if (RungPosition == eRungPosition.rungPositionTop)
+                RankNumber++;
         }
     }
     

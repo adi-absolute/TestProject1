@@ -15,8 +15,8 @@ namespace Project1
         {
             Rank r = new Rank();
 
-            r.set_RankNumber(eRankNumber.rank11kyu);
-            eRankNumber getRank = r.get_RankNumber();
+            r.RankNumber = eRankNumber.rank11kyu;
+            eRankNumber getRank = r.RankNumber;
 
             Assert.AreEqual(eRankNumber.rank11kyu, getRank);
         }
@@ -26,8 +26,8 @@ namespace Project1
         {
             Rank r = new Rank();
 
-            r.set_RungPosition(eRungPosition.rungPositionBottom);
-            eRungPosition getRung = r.get_RungPosition();
+            r.RungPosition = eRungPosition.rungPositionBottom;
+            eRungPosition getRung = r.RungPosition;
 
             Assert.AreEqual(eRungPosition.rungPositionBottom, getRung);
         }
@@ -37,8 +37,8 @@ namespace Project1
         {
             Rank r = new Rank();
 
-            eRankNumber getRank = r.get_RankNumber();
-            eRungPosition getRung = r.get_RungPosition();
+            eRankNumber getRank = r.RankNumber;
+            eRungPosition getRung = r.RungPosition;
 
             Assert.AreEqual(eRankNumber.rank36kyu, getRank);
             Assert.AreEqual(eRungPosition.rungPositionMiddle, getRung);
@@ -49,8 +49,8 @@ namespace Project1
         {
             Rank r = new Rank(eRankNumber.rank4Dan);
 
-            eRankNumber getRank = r.get_RankNumber();
-            eRungPosition getRung = r.get_RungPosition();
+            eRankNumber getRank = r.RankNumber;
+            eRungPosition getRung = r.RungPosition;
 
             Assert.AreEqual(eRankNumber.rank4Dan, getRank);
             Assert.AreEqual(eRungPosition.rungPositionMiddle, getRung);
@@ -61,8 +61,8 @@ namespace Project1
         {
             Rank r = new Rank(eRankNumber.rank1Dan, eRungPosition.rungPositionTop);
 
-            eRankNumber getRank = r.get_RankNumber();
-            eRungPosition getRung = r.get_RungPosition();
+            eRankNumber getRank = r.RankNumber;
+            eRungPosition getRung = r.RungPosition;
 
             Assert.AreEqual(eRankNumber.rank1Dan, getRank);
             Assert.AreEqual(eRungPosition.rungPositionTop, getRung);
@@ -75,8 +75,8 @@ namespace Project1
 
             r.MoveUp();
 
-            eRankNumber getRank = r.get_RankNumber();
-            eRungPosition getRung = r.get_RungPosition();
+            eRankNumber getRank = r.RankNumber;
+            eRungPosition getRung = r.RungPosition;
 
             Assert.AreEqual(eRankNumber.rank30kyu, getRank);
             Assert.AreEqual(eRungPosition.rungPositionTop, getRung);
@@ -89,8 +89,8 @@ namespace Project1
 
             r.MoveUp();
 
-            eRankNumber getRank = r.get_RankNumber();
-            eRungPosition getRung = r.get_RungPosition();
+            eRankNumber getRank = r.RankNumber;
+            eRungPosition getRung = r.RungPosition;
 
             Assert.AreEqual(eRankNumber.rank24kyu, getRank);
             Assert.AreEqual(eRungPosition.rungPositionMiddle, getRung);
@@ -103,8 +103,8 @@ namespace Project1
 
             r.MoveUp();
 
-            eRankNumber getRank = r.get_RankNumber();
-            eRungPosition getRung = r.get_RungPosition();
+            eRankNumber getRank = r.RankNumber;
+            eRungPosition getRung = r.RungPosition;
 
             Assert.AreEqual(eRankNumber.rank18kyu, getRank);
             Assert.AreEqual(eRungPosition.rungPositionBottom, getRung);
@@ -117,8 +117,8 @@ namespace Project1
 
             r.MoveUp();
 
-            eRankNumber getRank = r.get_RankNumber();
-            eRungPosition getRung = r.get_RungPosition();
+            eRankNumber getRank = r.RankNumber;
+            eRungPosition getRung = r.RungPosition;
 
             Assert.AreEqual(eRankNumber.rank19kyu, getRank);
             Assert.AreEqual(eRungPosition.rungPositionMiddle, getRung);
@@ -126,8 +126,8 @@ namespace Project1
             // Second Move on same rung
             r.MoveUp();
 
-            getRank = r.get_RankNumber();
-            getRung = r.get_RungPosition();
+            getRank = r.RankNumber;
+            getRung = r.RungPosition;
 
             Assert.AreEqual(eRankNumber.rank19kyu, getRank);
             Assert.AreEqual(eRungPosition.rungPositionTop, getRung);
@@ -140,8 +140,8 @@ namespace Project1
 
             r.MoveUp();
 
-            eRankNumber getRank = r.get_RankNumber();
-            eRungPosition getRung = r.get_RungPosition();
+            eRankNumber getRank = r.RankNumber;
+            eRungPosition getRung = r.RungPosition;
 
             Assert.AreEqual(eRankNumber.rank1Dan, getRank);
             Assert.AreEqual(eRungPosition.rungPositionBottom2, getRung);
@@ -154,8 +154,8 @@ namespace Project1
 
             r.MoveUp();
 
-            eRankNumber getRank = r.get_RankNumber();
-            eRungPosition getRung = r.get_RungPosition();
+            eRankNumber getRank = r.RankNumber;
+            eRungPosition getRung = r.RungPosition;
 
             Assert.AreEqual(eRankNumber.rank4Dan, getRank);
             Assert.AreEqual(eRungPosition.rungPositionBottom, getRung);
@@ -163,8 +163,8 @@ namespace Project1
             // Second Move on same rung
             r.MoveUp();
 
-            getRank = r.get_RankNumber();
-            getRung = r.get_RungPosition();
+            getRank = r.RankNumber;
+            getRung = r.RungPosition;
 
             Assert.AreEqual(eRankNumber.rank4Dan, getRank);
             Assert.AreEqual(eRungPosition.rungPositionMiddle, getRung);
@@ -172,8 +172,8 @@ namespace Project1
             // Third Move on same rung
             r.MoveUp();
 
-            getRank = r.get_RankNumber();
-            getRung = r.get_RungPosition();
+            getRank = r.RankNumber;
+            getRung = r.RungPosition;
 
             Assert.AreEqual(eRankNumber.rank4Dan, getRank);
             Assert.AreEqual(eRungPosition.rungPositionTop, getRung);
@@ -186,8 +186,8 @@ namespace Project1
 
             r.MoveUp();
 
-            eRankNumber getRank = r.get_RankNumber();
-            eRungPosition getRung = r.get_RungPosition();
+            eRankNumber getRank = r.RankNumber;
+            eRungPosition getRung = r.RungPosition;
 
             Assert.AreEqual(eRankNumber.rank9Dan, getRank);
             Assert.AreEqual(eRungPosition.rungPositionTop, getRung);
@@ -206,8 +206,8 @@ namespace Project1
 
             r.MoveDown();
 
-            eRankNumber getRank = r.get_RankNumber();
-            eRungPosition getRung = r.get_RungPosition();
+            eRankNumber getRank = r.RankNumber;
+            eRungPosition getRung = r.RungPosition;
 
             Assert.AreEqual(eRankNumber.rank30kyu, getRank);
             Assert.AreEqual(eRungPosition.rungPositionMiddle, getRung);
@@ -220,8 +220,8 @@ namespace Project1
 
             r.MoveDown();
 
-            eRankNumber getRank = r.get_RankNumber();
-            eRungPosition getRung = r.get_RungPosition();
+            eRankNumber getRank = r.RankNumber;
+            eRungPosition getRung = r.RungPosition;
 
             Assert.AreEqual(eRankNumber.rank31kyu, getRank);
             Assert.AreEqual(eRungPosition.rungPositionTop, getRung);
@@ -234,8 +234,8 @@ namespace Project1
 
             r.MoveDown();
 
-            eRankNumber getRank = r.get_RankNumber();
-            eRungPosition getRung = r.get_RungPosition();
+            eRankNumber getRank = r.RankNumber;
+            eRungPosition getRung = r.RungPosition;
 
             Assert.AreEqual(eRankNumber.rank10kyu, getRank);
             Assert.AreEqual(eRungPosition.rungPositionMiddle, getRung);
@@ -243,8 +243,8 @@ namespace Project1
             // Move Down Second Time
             r.MoveDown();
 
-            getRank = r.get_RankNumber();
-            getRung = r.get_RungPosition();
+            getRank = r.RankNumber;
+            getRung = r.RungPosition;
 
             Assert.AreEqual(eRankNumber.rank10kyu, getRank);
             Assert.AreEqual(eRungPosition.rungPositionBottom, getRung);
@@ -257,8 +257,8 @@ namespace Project1
 
             r.MoveDown();
 
-            eRankNumber getRank = r.get_RankNumber();
-            eRungPosition getRung = r.get_RungPosition();
+            eRankNumber getRank = r.RankNumber;
+            eRungPosition getRung = r.RungPosition;
 
             Assert.AreEqual(eRankNumber.rank31kyu, getRank);
             Assert.AreEqual(eRungPosition.rungPositionTop, getRung);
@@ -271,8 +271,8 @@ namespace Project1
 
             r.MoveDown();
 
-            eRankNumber getRank = r.get_RankNumber();
-            eRungPosition getRung = r.get_RungPosition();
+            eRankNumber getRank = r.RankNumber;
+            eRungPosition getRung = r.RungPosition;
 
             Assert.AreEqual(eRankNumber.rank1Dan, getRank);
             Assert.AreEqual(eRungPosition.rungPositionMiddle, getRung);
@@ -280,8 +280,8 @@ namespace Project1
             // Move Down Second Time
             r.MoveDown();
 
-            getRank = r.get_RankNumber();
-            getRung = r.get_RungPosition();
+            getRank = r.RankNumber;
+            getRung = r.RungPosition;
 
             Assert.AreEqual(eRankNumber.rank1Dan, getRank);
             Assert.AreEqual(eRungPosition.rungPositionBottom, getRung);
@@ -289,8 +289,8 @@ namespace Project1
             // Move Down Third Time
             r.MoveDown();
 
-            getRank = r.get_RankNumber();
-            getRung = r.get_RungPosition();
+            getRank = r.RankNumber;
+            getRung = r.RungPosition;
 
             Assert.AreEqual(eRankNumber.rank1Dan, getRank);
             Assert.AreEqual(eRungPosition.rungPositionBottom2, getRung);
@@ -303,8 +303,8 @@ namespace Project1
 
             r.MoveDown();
 
-            eRankNumber getRank = r.get_RankNumber();
-            eRungPosition getRung = r.get_RungPosition();
+            eRankNumber getRank = r.RankNumber;
+            eRungPosition getRung = r.RungPosition;
 
             Assert.AreEqual(eRankNumber.rank1kyu, getRank);
             Assert.AreEqual(eRungPosition.rungPositionTop, getRung);
@@ -317,8 +317,8 @@ namespace Project1
 
             r.MoveDown();
 
-            eRankNumber getRank = r.get_RankNumber();
-            eRungPosition getRung = r.get_RungPosition();
+            eRankNumber getRank = r.RankNumber;
+            eRungPosition getRung = r.RungPosition;
 
             Assert.AreEqual(eRankNumber.rank36kyu, getRank);
             Assert.AreEqual(eRungPosition.rungPositionMiddle, getRung);

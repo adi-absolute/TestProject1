@@ -27,7 +27,7 @@ namespace Project1
             myLastPlayerID++;
 
             Player newPlayer = new Player(name, rank, rung);
-            newPlayer.set_ID(myLastPlayerID);
+            newPlayer.myID = myLastPlayerID;
 
             myPlayerList.Add(newPlayer);
             return true;
@@ -35,14 +35,14 @@ namespace Project1
 
         public bool RemovePlayer(UInt16 id)
         {
-            Player found = myPlayerList.Find(f => f.get_ID() == id);
+            Player found = myPlayerList.Find(f => f.myID == id);
             myPlayerList.Remove(found);
             return false;
         }
 
         public List<Player> findPlayers(string partial)
         {
-            List<Player> pList = myPlayerList.FindAll(f => true == f.get_name().Contains(partial));
+            List<Player> pList = myPlayerList.FindAll(f => true == f.myName.Contains(partial));
             return pList;
         }
 
@@ -61,13 +61,13 @@ namespace Project1
         {
             myLastGameID++;
 
-            game.set_GameID(myLastGameID);
+            game.GameID = myLastGameID;
             myGameList.Add(game);
         }
 
         public Game get_Game(UInt16 id)
         {
-            Game game = myGameList.Find(g => id == g.get_GameID());
+            Game game = myGameList.Find(g => id == g.GameID);
             
             return game;
         }

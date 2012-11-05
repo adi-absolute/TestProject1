@@ -15,12 +15,12 @@ namespace Project1
         {
             Game g = new Game();
 
-            g.set_BlackPlayerID(10);
-            UInt16 id = g.get_BlackPlayerID();
+            g.BlackPlayerID = 10;
+            UInt16 id = g.BlackPlayerID;
             Assert.AreEqual(10, id);
 
-            g.set_WhitePlayerID(11);
-            id = g.get_WhitePlayerID();
+            g.WhitePlayerID = 11;
+            id = g.WhitePlayerID;
             Assert.AreEqual(11, id);
         }
 
@@ -29,8 +29,8 @@ namespace Project1
         {
             Game g = new Game();
 
-            g.set_GameID(1000);
-            UInt16 id = g.get_GameID();
+            g.GameID = 1000;
+            UInt16 id = g.GameID;
             Assert.AreEqual(1000, id);
         }
 
@@ -39,8 +39,8 @@ namespace Project1
         {
             Game g = new Game();
 
-            g.set_Result(eResult.abandoned);
-            eResult result = g.get_Result();
+            g.Result = eResult.abandoned;
+            eResult result = g.Result;
             Assert.AreEqual(eResult.abandoned, result);
         }
 
@@ -49,8 +49,8 @@ namespace Project1
         {
             Game g = new Game();
 
-            g.set_Kome(25);
-            UInt16 kome = g.get_Kome();
+            g.Kome = 25 ;
+            UInt16 kome = g.Kome;
             Assert.AreEqual(25, kome);
         }
 
@@ -59,11 +59,11 @@ namespace Project1
         {
             Game g = new Game(155, 13, 6, 7, eResult.whiteWin);
 
-            Assert.AreEqual(155, g.get_GameID());
-            Assert.AreEqual(13, g.get_BlackPlayerID());
-            Assert.AreEqual(6, g.get_WhitePlayerID());
-            Assert.AreEqual(7, g.get_Kome());
-            Assert.AreEqual(eResult.whiteWin, g.get_Result());
+            Assert.AreEqual(155, g.GameID);
+            Assert.AreEqual(13, g.BlackPlayerID);
+            Assert.AreEqual(6, g.WhitePlayerID);
+            Assert.AreEqual(7, g.Kome);
+            Assert.AreEqual(eResult.whiteWin, g.Result);
         }
     }
 }
