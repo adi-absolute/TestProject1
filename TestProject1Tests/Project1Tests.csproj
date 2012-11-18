@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GameTests.cs" />
+    <Compile Include="IAddGameTests.cs" />
     <Compile Include="LadderTests.cs" />
     <Compile Include="RankTests.cs" />
     <Compile Include="PlayerTests.cs" />
