@@ -57,6 +57,7 @@
             this.textBox_AddPlayerName.Name = "textBox_AddPlayerName";
             this.textBox_AddPlayerName.Size = new System.Drawing.Size(191, 20);
             this.textBox_AddPlayerName.TabIndex = 1;
+            this.textBox_AddPlayerName.TextChanged += new System.EventHandler(this.textBox_AddPlayerName_TextChanged);
             // 
             // label_Rank
             // 

@@ -11,11 +11,11 @@ namespace Project1
 {
     public partial class IAddPlayer : Form
     {
-        bool okPressed = false;
+        //bool okPressed = false;
         public IAddPlayer()
         {
             InitializeComponent();
-            textBox_AddPlayerName.Text = listBox_Ranks.SelectedIndex.ToString();
+            /*textBox_AddPlayerName.Text = listBox_Ranks.SelectedIndex.ToString();
             while (okPressed == false)
             {
                 if ((textBox_AddPlayerName.Text != null)
@@ -27,7 +27,7 @@ namespace Project1
                 {
                     button_OK.Enabled = false;
                 }
-            }
+            }*/
 
         }
 
@@ -50,6 +50,25 @@ namespace Project1
                 radioButton_LowerMiddle.Enabled = false;
                 radioButton_Middle.Enabled = false;
             }
+
+            if ((textBox_AddPlayerName.Text != "")
+                && (listBox_Ranks.SelectedIndex != -1))
+            {
+                button_OK.Enabled = true;
+            }
+            else
+                button_OK.Enabled = false;
+        }
+
+        private void textBox_AddPlayerName_TextChanged(object sender, EventArgs e)
+        {
+            if ((textBox_AddPlayerName.Text != "")
+                && (listBox_Ranks.SelectedIndex != -1))
+            {
+                button_OK.Enabled = true;
+            }
+            else
+                button_OK.Enabled = false;
         }
     }
 }
