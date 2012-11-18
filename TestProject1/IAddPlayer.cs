@@ -11,24 +11,12 @@ namespace Project1
 {
     public partial class IAddPlayer : Form
     {
-        //bool okPressed = false;
+        public event EventHandler PAdded;
+        public EventArgs ea = null;
+
         public IAddPlayer()
         {
             InitializeComponent();
-            /*textBox_AddPlayerName.Text = listBox_Ranks.SelectedIndex.ToString();
-            while (okPressed == false)
-            {
-                if ((textBox_AddPlayerName.Text != null)
-                && (listBox_Ranks.SelectedIndex != -1))
-                {
-                    button_OK.Enabled = true;
-                }
-                else
-                {
-                    button_OK.Enabled = false;
-                }
-            }*/
-
         }
 
         private void listBox_Ranks_SelectedIndexChanged(object sender, EventArgs e)
@@ -69,6 +57,11 @@ namespace Project1
             }
             else
                 button_OK.Enabled = false;
+        }
+
+        private void button_OK_Click(object sender, EventArgs e)
+        {
+            PAdded(this, ea);
         }
     }
 }

@@ -28,9 +28,18 @@ namespace Project1
         private void button_AddPlayer_Click(object sender, EventArgs e)
         {
             IAddPlayer iPlayer = new IAddPlayer();
+            iPlayer.PAdded += new EventHandler(iPlayer_PAdded);
             iPlayer.ShowDialog();
+            
+        }
+
+        void iPlayer_PAdded(object sender, EventArgs e)
+        {
+            MessageBox.Show("Bow wow!");
+            //throw new NotImplementedException();
         }
 
 
     }
+
 }
