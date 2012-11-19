@@ -26,7 +26,7 @@ namespace Project1
         {
             Player p = new Player();
 
-            UInt16 id = 42;
+            uint id = 42;
             p.myID = id;
 
             Assert.AreEqual(id, p.myID);
@@ -49,20 +49,20 @@ namespace Project1
 
             eRungPosition rung = p.GetRungPosition();
 
-            Assert.AreEqual(eRungPosition.rungPositionMiddle, rung);
+            Assert.AreEqual(eRungPosition.rungPositionFirst, rung);
         }
 
         [Test]
         public void SetNewPlayerThroughConstructor()
         {
             string name = "Aditya";
-            Player p = new Player(name, eRankNumber.rank3kyu, eRungPosition.rungPositionBottom);
+            Player p = new Player(name, eRankNumber.rank3kyu, eRungPosition.rungPositionSecond);
 
             eRankNumber rank = p.GetRankNumber();
             eRungPosition rung = p.GetRungPosition();
 
             Assert.AreEqual(eRankNumber.rank3kyu, rank);
-            Assert.AreEqual(eRungPosition.rungPositionBottom, rung);
+            Assert.AreEqual(eRungPosition.rungPositionSecond, rung);
             Assert.AreEqual(name, p.myName);
         }
     }

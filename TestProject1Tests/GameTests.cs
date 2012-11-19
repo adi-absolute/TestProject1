@@ -16,7 +16,7 @@ namespace Project1
             Game g = new Game();
 
             g.BlackPlayerID = 10;
-            UInt16 id = g.BlackPlayerID;
+            uint id = g.BlackPlayerID;
             Assert.AreEqual(10, id);
 
             g.WhitePlayerID = 11;
@@ -30,7 +30,7 @@ namespace Project1
             Game g = new Game();
 
             g.GameID = 1000;
-            UInt16 id = g.GameID;
+            uint id = g.GameID;
             Assert.AreEqual(1000, id);
         }
 
@@ -50,7 +50,7 @@ namespace Project1
             Game g = new Game();
 
             g.Kome = 25 ;
-            UInt16 kome = g.Kome;
+            uint kome = g.Kome;
             Assert.AreEqual(25, kome);
         }
 

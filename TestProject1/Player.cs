@@ -9,13 +9,13 @@ namespace Project1
     public class Player
     {
         public string myName { get; set; }
-        public UInt16 myID { get; set; }
+        public uint myID { get; set; }
         Rank myRank = new Rank();
 
         public Player()
         {
             myRank.RankNumber = eRankNumber.rank36kyu;
-            myRank.RungPosition = eRungPosition.rungPositionMiddle;
+            myRank.RungPosition = eRungPosition.rungPositionFirst;
         }
 
         public Player(string name, eRankNumber rank, eRungPosition rung)

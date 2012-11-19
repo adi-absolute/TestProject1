@@ -24,7 +24,7 @@ namespace Project1
             Ladder ladder = new Ladder();
 
             string name = "Test";
-            ladder.AddPlayer(name, eRankNumber.rank10kyu, eRungPosition.rungPositionMiddle);
+            ladder.AddPlayer(name, eRankNumber.rank10kyu, eRungPosition.rungPositionFirst);
             
             Assert.AreEqual(1, ladder.get_NumberOfPlayers());
         }
@@ -35,7 +35,7 @@ namespace Project1
             Ladder ladder = new Ladder();
 
             string name = "Test";
-            ladder.AddPlayer(name, eRankNumber.rank10kyu, eRungPosition.rungPositionMiddle);
+            ladder.AddPlayer(name, eRankNumber.rank10kyu, eRungPosition.rungPositionFirst);
 
             List<Player> pList = ladder.get_PlayerList();
 
@@ -49,11 +49,11 @@ namespace Project1
             Ladder ladder = new Ladder();
 
             string name = "Test";
-            ladder.AddPlayer(name, eRankNumber.rank10kyu, eRungPosition.rungPositionMiddle);
+            ladder.AddPlayer(name, eRankNumber.rank10kyu, eRungPosition.rungPositionFirst);
 
             List<Player> pList = ladder.get_PlayerList();
 
-            UInt16 id = pList.ElementAt(0).myID;
+            uint id = pList.ElementAt(0).myID;
             Assert.AreEqual(1, id);
         }
 
@@ -63,7 +63,7 @@ namespace Project1
             Ladder ladder = new Ladder();
 
             string name = "Test";
-            ladder.AddPlayer(name, eRankNumber.rank10kyu, eRungPosition.rungPositionMiddle);
+            ladder.AddPlayer(name, eRankNumber.rank10kyu, eRungPosition.rungPositionFirst);
 
             List<Player> pList = ladder.get_PlayerList();
 
@@ -77,7 +77,7 @@ namespace Project1
             Ladder ladder = new Ladder();
 
             string name = "Test";
-            bool result = ladder.AddPlayer(name, eRankNumber.rank10kyu, eRungPosition.rungPositionMiddle);
+            bool result = ladder.AddPlayer(name, eRankNumber.rank10kyu, eRungPosition.rungPositionFirst);
 
             Assert.IsTrue(result);
         }
@@ -88,7 +88,7 @@ namespace Project1
             Ladder ladder = new Ladder();
 
             string name = "Test";
-            bool result = ladder.AddPlayer(name, eRankNumber.rank10kyu, eRungPosition.rungPositionMiddle);
+            bool result = ladder.AddPlayer(name, eRankNumber.rank10kyu, eRungPosition.rungPositionFirst);
 
             ladder.RemovePlayer(1);
             List<Player> pList = ladder.get_PlayerList();
@@ -101,7 +101,7 @@ namespace Project1
             Ladder ladder = new Ladder();
 
             string name = "Test";
-            bool result = ladder.AddPlayer(name, eRankNumber.rank10kyu, eRungPosition.rungPositionMiddle);
+            bool result = ladder.AddPlayer(name, eRankNumber.rank10kyu, eRungPosition.rungPositionFirst);
             string partialName = "Tes";
             
             List<Player> pList = ladder.findPlayers(partialName);
@@ -118,7 +118,7 @@ namespace Project1
 
             string name = "Test";
             eRankNumber rank = eRankNumber.rank5Dan;
-            bool result = ladder.AddPlayer(name, rank, eRungPosition.rungPositionMiddle);
+            bool result = ladder.AddPlayer(name, rank, eRungPosition.rungPositionFirst);
             
             List<Player> pList = ladder.findPlayers(rank);
 
@@ -139,9 +139,9 @@ namespace Project1
             eRankNumber rank2 = eRankNumber.rank4Dan;
             eRankNumber rank3 = eRankNumber.rank5Dan;
 
-            ladder.AddPlayer(name1, rank1, eRungPosition.rungPositionMiddle);
-            ladder.AddPlayer(name2, rank2, eRungPosition.rungPositionMiddle);
-            ladder.AddPlayer(name3, rank3, eRungPosition.rungPositionMiddle);
+            ladder.AddPlayer(name1, rank1, eRungPosition.rungPositionFirst);
+            ladder.AddPlayer(name2, rank2, eRungPosition.rungPositionFirst);
+            ladder.AddPlayer(name3, rank3, eRungPosition.rungPositionFirst);
 
             List<Player> pList = ladder.findPlayers(rank1);
 
@@ -164,9 +164,9 @@ namespace Project1
             eRankNumber rank2 = eRankNumber.rank4Dan;
             eRankNumber rank3 = eRankNumber.rank5Dan;
 
-            ladder.AddPlayer(name1, rank1, eRungPosition.rungPositionMiddle);
-            ladder.AddPlayer(name2, rank2, eRungPosition.rungPositionMiddle);
-            ladder.AddPlayer(name3, rank3, eRungPosition.rungPositionMiddle);
+            ladder.AddPlayer(name1, rank1, eRungPosition.rungPositionFirst);
+            ladder.AddPlayer(name2, rank2, eRungPosition.rungPositionFirst);
+            ladder.AddPlayer(name3, rank3, eRungPosition.rungPositionFirst);
             ladder.RemovePlayer(2);
 
             List<Player> pList = ladder.get_PlayerList();
@@ -192,11 +192,11 @@ namespace Project1
             eRankNumber rank3 = eRankNumber.rank3Dan;
             eRankNumber rank4 = eRankNumber.rank2Dan;
 
-            ladder.AddPlayer(name1, rank1, eRungPosition.rungPositionMiddle);
-            ladder.AddPlayer(name2, rank2, eRungPosition.rungPositionMiddle);
-            ladder.AddPlayer(name3, rank3, eRungPosition.rungPositionMiddle);
+            ladder.AddPlayer(name1, rank1, eRungPosition.rungPositionFirst);
+            ladder.AddPlayer(name2, rank2, eRungPosition.rungPositionFirst);
+            ladder.AddPlayer(name3, rank3, eRungPosition.rungPositionFirst);
             ladder.RemovePlayer(3);
-            ladder.AddPlayer(name4, rank4, eRungPosition.rungPositionMiddle);
+            ladder.AddPlayer(name4, rank4, eRungPosition.rungPositionFirst);
             
             List<Player> pList = ladder.get_PlayerList();
 
@@ -212,7 +212,7 @@ namespace Project1
         {
             Ladder ladder = new Ladder();
 
-            UInt16 nGames = ladder.get_NumberOfGames();
+            uint nGames = ladder.get_NumberOfGames();
 
             Assert.AreEqual(0, nGames);
         }
@@ -224,7 +224,7 @@ namespace Project1
 
             Game g = new Game();
             ladder.AddGame(g);
-            UInt16 nGames = ladder.get_NumberOfGames();
+            uint nGames = ladder.get_NumberOfGames();
             Assert.AreEqual(1, nGames);
 
             ladder.AddGame(g);
@@ -239,7 +239,7 @@ namespace Project1
 
             Game g = new Game(0, 5, 3, 2, eResult.whiteWin);
             ladder.AddGame(g);
-            UInt16 nGames = ladder.get_NumberOfGames();
+            uint nGames = ladder.get_NumberOfGames();
             Assert.AreEqual(1, nGames);
 
             Game g2 = ladder.get_Game(1);

@@ -28,14 +28,18 @@ namespace Project1
         private void button_AddPlayer_Click(object sender, EventArgs e)
         {
             IAddPlayer iPlayer = new IAddPlayer();
-            iPlayer.PAdded += new EventHandler(iPlayer_PAdded);
+            iPlayer.PlayerAdded += new EventHandler(iPlayer_onPlayerAdded);
             iPlayer.ShowDialog();
             
         }
 
-        void iPlayer_PAdded(object sender, EventArgs e)
+        void iPlayer_onPlayerAdded(object sender, PlayerArgs e)
         {
-            MessageBox.Show("Bow wow!");
+            string name = e.Name;
+            eRankNumber rank = (eRankNumber)e.rank;
+            eRungPosition rung = (eRungPosition)e.rung;
+            Player p = new Player();
+            MessageBox.Show("Bow wow! " + e.rank);
             //throw new NotImplementedException();
         }
 

@@ -32,10 +32,10 @@
             this.textBox_AddPlayerName = new System.Windows.Forms.TextBox();
             this.label_Rank = new System.Windows.Forms.Label();
             this.listBox_Ranks = new System.Windows.Forms.ListBox();
-            this.radioButton_TopRung = new System.Windows.Forms.RadioButton();
-            this.radioButton_Middle = new System.Windows.Forms.RadioButton();
-            this.radioButton_LowerMiddle = new System.Windows.Forms.RadioButton();
-            this.radioButton_Bottom = new System.Windows.Forms.RadioButton();
+            this.radioButton_RungTop = new System.Windows.Forms.RadioButton();
+            this.radioButton_RungThird = new System.Windows.Forms.RadioButton();
+            this.radioButton_RungFourth = new System.Windows.Forms.RadioButton();
+            this.radioButton_RungSecond = new System.Windows.Forms.RadioButton();
             this.label_LadderRung = new System.Windows.Forms.Label();
             this.button_OK = new System.Windows.Forms.Button();
             this.button_Cancel = new System.Windows.Forms.Button();
@@ -123,47 +123,47 @@
             this.listBox_Ranks.TabIndex = 3;
             this.listBox_Ranks.SelectedIndexChanged += new System.EventHandler(this.listBox_Ranks_SelectedIndexChanged);
             // 
-            // radioButton_TopRung
+            // radioButton_RungTop
             // 
-            this.radioButton_TopRung.AutoSize = true;
-            this.radioButton_TopRung.Checked = true;
-            this.radioButton_TopRung.Location = new System.Drawing.Point(136, 93);
-            this.radioButton_TopRung.Name = "radioButton_TopRung";
-            this.radioButton_TopRung.Size = new System.Drawing.Size(44, 17);
-            this.radioButton_TopRung.TabIndex = 4;
-            this.radioButton_TopRung.TabStop = true;
-            this.radioButton_TopRung.Text = "Top";
-            this.radioButton_TopRung.UseVisualStyleBackColor = true;
+            this.radioButton_RungTop.AutoSize = true;
+            this.radioButton_RungTop.Checked = true;
+            this.radioButton_RungTop.Location = new System.Drawing.Point(136, 93);
+            this.radioButton_RungTop.Name = "radioButton_RungTop";
+            this.radioButton_RungTop.Size = new System.Drawing.Size(44, 17);
+            this.radioButton_RungTop.TabIndex = 4;
+            this.radioButton_RungTop.TabStop = true;
+            this.radioButton_RungTop.Text = "Top";
+            this.radioButton_RungTop.UseVisualStyleBackColor = true;
             // 
-            // radioButton_Middle
+            // radioButton_RungThird
             // 
-            this.radioButton_Middle.AutoSize = true;
-            this.radioButton_Middle.Location = new System.Drawing.Point(136, 115);
-            this.radioButton_Middle.Name = "radioButton_Middle";
-            this.radioButton_Middle.Size = new System.Drawing.Size(56, 17);
-            this.radioButton_Middle.TabIndex = 5;
-            this.radioButton_Middle.Text = "Middle";
-            this.radioButton_Middle.UseVisualStyleBackColor = true;
+            this.radioButton_RungThird.AutoSize = true;
+            this.radioButton_RungThird.Location = new System.Drawing.Point(136, 115);
+            this.radioButton_RungThird.Name = "radioButton_RungThird";
+            this.radioButton_RungThird.Size = new System.Drawing.Size(49, 17);
+            this.radioButton_RungThird.TabIndex = 5;
+            this.radioButton_RungThird.Text = "Third";
+            this.radioButton_RungThird.UseVisualStyleBackColor = true;
             // 
-            // radioButton_LowerMiddle
+            // radioButton_RungFourth
             // 
-            this.radioButton_LowerMiddle.AutoSize = true;
-            this.radioButton_LowerMiddle.Location = new System.Drawing.Point(198, 115);
-            this.radioButton_LowerMiddle.Name = "radioButton_LowerMiddle";
-            this.radioButton_LowerMiddle.Size = new System.Drawing.Size(88, 17);
-            this.radioButton_LowerMiddle.TabIndex = 6;
-            this.radioButton_LowerMiddle.Text = "Lower Middle";
-            this.radioButton_LowerMiddle.UseVisualStyleBackColor = true;
+            this.radioButton_RungFourth.AutoSize = true;
+            this.radioButton_RungFourth.Location = new System.Drawing.Point(198, 115);
+            this.radioButton_RungFourth.Name = "radioButton_RungFourth";
+            this.radioButton_RungFourth.Size = new System.Drawing.Size(55, 17);
+            this.radioButton_RungFourth.TabIndex = 6;
+            this.radioButton_RungFourth.Text = "Fourth";
+            this.radioButton_RungFourth.UseVisualStyleBackColor = true;
             // 
-            // radioButton_Bottom
+            // radioButton_RungSecond
             // 
-            this.radioButton_Bottom.AutoSize = true;
-            this.radioButton_Bottom.Location = new System.Drawing.Point(198, 92);
-            this.radioButton_Bottom.Name = "radioButton_Bottom";
-            this.radioButton_Bottom.Size = new System.Drawing.Size(58, 17);
-            this.radioButton_Bottom.TabIndex = 7;
-            this.radioButton_Bottom.Text = "Bottom";
-            this.radioButton_Bottom.UseVisualStyleBackColor = true;
+            this.radioButton_RungSecond.AutoSize = true;
+            this.radioButton_RungSecond.Location = new System.Drawing.Point(198, 92);
+            this.radioButton_RungSecond.Name = "radioButton_RungSecond";
+            this.radioButton_RungSecond.Size = new System.Drawing.Size(62, 17);
+            this.radioButton_RungSecond.TabIndex = 7;
+            this.radioButton_RungSecond.Text = "Second";
+            this.radioButton_RungSecond.UseVisualStyleBackColor = true;
             // 
             // label_LadderRung
             // 
@@ -202,10 +202,10 @@
             this.Controls.Add(this.button_Cancel);
             this.Controls.Add(this.button_OK);
             this.Controls.Add(this.label_LadderRung);
-            this.Controls.Add(this.radioButton_Bottom);
-            this.Controls.Add(this.radioButton_LowerMiddle);
-            this.Controls.Add(this.radioButton_Middle);
-            this.Controls.Add(this.radioButton_TopRung);
+            this.Controls.Add(this.radioButton_RungSecond);
+            this.Controls.Add(this.radioButton_RungFourth);
+            this.Controls.Add(this.radioButton_RungThird);
+            this.Controls.Add(this.radioButton_RungTop);
             this.Controls.Add(this.listBox_Ranks);
             this.Controls.Add(this.label_Rank);
             this.Controls.Add(this.textBox_AddPlayerName);
@@ -223,10 +223,10 @@
         private System.Windows.Forms.TextBox textBox_AddPlayerName;
         private System.Windows.Forms.Label label_Rank;
         private System.Windows.Forms.ListBox listBox_Ranks;
-        private System.Windows.Forms.RadioButton radioButton_TopRung;
-        private System.Windows.Forms.RadioButton radioButton_Middle;
-        private System.Windows.Forms.RadioButton radioButton_LowerMiddle;
-        private System.Windows.Forms.RadioButton radioButton_Bottom;
+        private System.Windows.Forms.RadioButton radioButton_RungTop;
+        private System.Windows.Forms.RadioButton radioButton_RungThird;
+        private System.Windows.Forms.RadioButton radioButton_RungFourth;
+        private System.Windows.Forms.RadioButton radioButton_RungSecond;
         private System.Windows.Forms.Label label_LadderRung;
         private System.Windows.Forms.Button button_OK;
         private System.Windows.Forms.Button button_Cancel;

@@ -7,14 +7,14 @@ namespace Project1
 {
     public class Ladder
     {
-        UInt16 myLastPlayerID;
-        UInt16 myLastGameID;
+        uint myLastPlayerID;
+        uint myLastGameID;
         List<Player> myPlayerList = new List<Player>();
         List<Game> myGameList = new List<Game>();
 
-        public UInt16 get_NumberOfPlayers()
+        public uint get_NumberOfPlayers()
         {
-            return (UInt16)myPlayerList.Count;
+            return (uint)myPlayerList.Count;
         }
 
         public List<Player> get_PlayerList()
@@ -33,7 +33,7 @@ namespace Project1
             return true;
         }
 
-        public bool RemovePlayer(UInt16 id)
+        public bool RemovePlayer(uint id)
         {
             Player found = myPlayerList.Find(f => f.myID == id);
             myPlayerList.Remove(found);
@@ -52,9 +52,9 @@ namespace Project1
             return pList;
         }
 
-        public UInt16 get_NumberOfGames()
+        public uint get_NumberOfGames()
         {
-            return (UInt16)myGameList.Count;
+            return (uint)myGameList.Count;
         }
 
         public void AddGame(Game game)
@@ -65,7 +65,7 @@ namespace Project1
             myGameList.Add(game);
         }
 
-        public Game get_Game(UInt16 id)
+        public Game get_Game(uint id)
         {
             Game game = myGameList.Find(g => id == g.GameID);
             
