@@ -38,8 +38,9 @@ namespace Project1
             string name = e.Name;
             eRankNumber rank = (eRankNumber)e.rank;
             eRungPosition rung = (eRungPosition)e.rung;
-            Player p = new Player();
-            MessageBox.Show("Bow wow! " + e.rank);
+            //Player p = new Player(name, rank, rung);
+            ladder.AddPlayer(name, rank, rung);
+            MessageBox.Show("Player Successfully Added");
             //throw new NotImplementedException();
         }
 

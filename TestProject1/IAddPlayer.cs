@@ -76,6 +76,13 @@ namespace Project1
                 pArg.rung = 3;
 
             PlayerAdded(this, pArg);
+
+            this.Close();
+        }
+
+        private void button_Cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 
