@@ -35,7 +35,7 @@
             // 
             // button_AddGame
             // 
-            this.button_AddGame.Location = new System.Drawing.Point(32, 277);
+            this.button_AddGame.Location = new System.Drawing.Point(45, 24);
             this.button_AddGame.Name = "button_AddGame";
             this.button_AddGame.Size = new System.Drawing.Size(75, 23);
             this.button_AddGame.TabIndex = 0;
@@ -45,7 +45,7 @@
             // 
             // button_AddPlayer
             // 
-            this.button_AddPlayer.Location = new System.Drawing.Point(351, 277);
+            this.button_AddPlayer.Location = new System.Drawing.Point(309, 24);
             this.button_AddPlayer.Name = "button_AddPlayer";
             this.button_AddPlayer.Size = new System.Drawing.Size(75, 23);
             this.button_AddPlayer.TabIndex = 1;
@@ -56,9 +56,9 @@
             // listBox_PlayerList
             // 
             this.listBox_PlayerList.FormattingEnabled = true;
-            this.listBox_PlayerList.Location = new System.Drawing.Point(351, 23);
+            this.listBox_PlayerList.Location = new System.Drawing.Point(278, 62);
             this.listBox_PlayerList.Name = "listBox_PlayerList";
-            this.listBox_PlayerList.Size = new System.Drawing.Size(83, 238);
+            this.listBox_PlayerList.Size = new System.Drawing.Size(149, 238);
             this.listBox_PlayerList.TabIndex = 2;
             // 
             // ILadder
