@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.IO;
 using System.Windows.Forms;
 
 namespace Project1
@@ -50,7 +51,18 @@ namespace Project1
             ladder.AddPlayer(name, rank, rung);
             //MessageBox.Show("Player Successfully Added");
             PopulatePlayerListBox();
+
+            File.AppendAllText("test.gop", name);
+            /*
+            //string informationToWrite = "Hello2 persistent file storage world!";
+            File.("test1.txt", ladder); // Change the file path here to where you want it.
+            
+            string[] arrayOfInformation = new string[2];
+            arrayOfInformation[0] = "This is line 1";
+            arrayOfInformation[1] = "This is line 2";
+            File.AppendAllLines("test2.txt", arrayOfInformation);
             //throw new NotImplementedException();
+            */
         }
 
         void PopulatePlayerListBox()
@@ -66,6 +78,11 @@ namespace Project1
                     + ")");
             }
 
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {            
+            this.Close();
         }
     }
 

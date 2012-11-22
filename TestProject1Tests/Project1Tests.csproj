@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FileMangerTests.cs" />
     <Compile Include="GameTests.cs" />
     <Compile Include="IAddGameTests.cs" />
     <Compile Include="LadderTests.cs" />
