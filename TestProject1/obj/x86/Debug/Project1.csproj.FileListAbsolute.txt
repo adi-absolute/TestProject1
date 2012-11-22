@@ -3,9 +3,6 @@ C:\Personal\Go\TestProject1\TestProject1\obj\x86\Debug\Project1.Properties.Resou
 C:\Personal\Go\TestProject1\TestProject1\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Personal\Go\TestProject1\TestProject1\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Personal\Go\TestProject1\TestProject1\bin\Debug\TestProject1.pdb
-C:\Personal\Go\TestProject1\TestProject1\bin\Debug\nunit.framework.dll
-C:\Personal\Go\TestProject1\TestProject1\bin\Debug\nunit.mocks.dll
-C:\Personal\Go\TestProject1\TestProject1\bin\Debug\nunit.framework.xml
 C:\Personal\Go\TestProject1\TestProject1\obj\x86\Debug\TestProject1.pdb
 C:\Personal\Go\TestProject1\TestProject1\bin\Debug\TestProject1.exe
 C:\Personal\Go\TestProject1\TestProject1\obj\x86\Debug\TestProject1.exe

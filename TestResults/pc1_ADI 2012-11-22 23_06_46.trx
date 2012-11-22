@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="46bc7368-2429-42cf-b62f-fd1a2140b1bd" name="pc1@ADI 2012-11-22 23:06:46" runUser="ADI\pc1" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="8e47a06c-9acb-4e37-8aaa-ce98d320818c">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment userDeploymentRoot="C:\Personal\Go\TestProject1\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="pc1_ADI 2012-11-22 23_06_46">
+      <DeploymentItem filename="C:\Personal\Go\TestProject1\TestProject1\bin\Debug\TestProject1.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-11-22T23:06:46.8362417+00:00" queuing="2012-11-22T23:06:46.9172463+00:00" start="2012-11-22T23:06:46.9352474+00:00" finish="2012-11-22T23:06:47.2012626+00:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="a196d2db-b595-47e8-0f85-ff9cf91d15cd">
+      <Execution id="955e15ab-c9b7-49d9-901f-d8ed93646ed6" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1VSTests.UnitTest1, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="a196d2db-b595-47e8-0f85-ff9cf91d15cd" executionId="955e15ab-c9b7-49d9-901f-d8ed93646ed6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="955e15ab-c9b7-49d9-901f-d8ed93646ed6" testId="a196d2db-b595-47e8-0f85-ff9cf91d15cd" testName="TestMethod1" computerName="ADI" duration="00:00:00.0124717" startTime="2012-11-22T23:06:46.9462480+00:00" endTime="2012-11-22T23:06:47.1812614+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="955e15ab-c9b7-49d9-901f-d8ed93646ed6">
+    </UnitTestResult>
+  </Results>
+</TestRun>
