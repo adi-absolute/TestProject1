@@ -14,17 +14,17 @@ namespace Project1
 
     public class Game
     {
-        public uint GameID { get; set; }
-        public uint BlackPlayerID { get; set; }
-        public uint WhitePlayerID { get; set; }
-        public uint Kome { get; set; }
+        public int GameID { get; set; }
+        public int BlackPlayerID { get; set; }
+        public int WhitePlayerID { get; set; }
+        public int Kome { get; set; }
         public eResult Result { get; set; }
 
         public Game()
         {
         }
 
-        public Game(uint game, uint black, uint white, uint kome, eResult result)
+        public Game(int game, int black, int white, int kome, eResult result)
         {
             GameID = game;
             BlackPlayerID = black;

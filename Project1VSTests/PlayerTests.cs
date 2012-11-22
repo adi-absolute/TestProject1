@@ -4,9 +4,8 @@ using System.Linq;
 using System.Text;
 using Project1;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-//using NUnit.Framework;
 
-namespace Project1VSTests
+namespace Project1
 {
     [TestClass]
     public class PlayerTests
@@ -27,7 +26,7 @@ namespace Project1VSTests
         {
             Player p = new Player();
 
-            uint id = 42;
+            int id = 42;
             p.myID = id;
 
             Assert.AreEqual(id, p.myID);

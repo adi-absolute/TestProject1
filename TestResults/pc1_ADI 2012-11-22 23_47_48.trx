@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="dbfbe15a-2dbd-4641-93a3-b6cdb3afb19e" name="pc1@ADI 2012-11-22 23:47:48" runUser="ADI\pc1" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="8e47a06c-9acb-4e37-8aaa-ce98d320818c">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="pc1_ADI 2012-11-22 23_47_48">
+      <DeploymentItem filename="C:\Personal\Go\TestProject1\TestProject1\bin\Debug\TestProject1.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-11-22T23:47:48.1100185+00:00" queuing="2012-11-22T23:47:48.4020352+00:00" start="2012-11-22T23:47:48.4420375+00:00" finish="2012-11-22T23:47:49.1090756+00:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="45" executed="45" passed="34" error="0" failed="11" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="FindPlayerFromListWithName" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="63417751-7623-be38-a4d3-37490ad4706f">
+      <Execution id="921ea4ca-8ee3-4038-b5c1-5be637cfdcae" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.LadderTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="FindPlayerFromListWithName" />
+    </UnitTest>
+    <UnitTest name="GetIDofLastPlayerInList" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="bf2d210f-499d-db34-fdc7-38401fadd68c">
+      <Execution id="9ea6c2d4-dc98-4b24-996d-7f02d181e58d" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.LadderTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetIDofLastPlayerInList" />
+    </UnitTest>
+    <UnitTest name="AddingGamesAutomaticallyAddsGameID" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="c8c2dc19-5f39-1c20-c766-3762219651c1">
+      <Execution id="54915131-8474-4532-960e-18ca9ae38153" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.LadderTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddingGamesAutomaticallyAddsGameID" />
+    </UnitTest>
+    <UnitTest name="MoveUpLadderHighRankUpARung" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="4d603034-9b20-4167-7863-d6342775eb94">
+      <Execution id="73750457-2754-405f-91ff-70bc60d77eda" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.RankTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MoveUpLadderHighRankUpARung" />
+    </UnitTest>
+    <UnitTest name="MoveDownHighRankDownARung" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="bed63836-32d0-838c-d496-ce4fc91f6c1f">
+      <Execution id="fa5cd38c-8dcf-4dd5-8165-ba888bea08b1" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.RankTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MoveDownHighRankDownARung" />
+    </UnitTest>
+    <UnitTest name="MoveUpLadderLowRankUpARung" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="b216a52f-2c4d-0364-703c-8d5add28730d">
+      <Execution id="3a670833-01cd-4149-876b-b914b37fd5ad" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.RankTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MoveUpLadderLowRankUpARung" />
+    </UnitTest>
+    <UnitTest name="GetAndSetResult" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="c11181c1-a3ce-72fd-52a3-a05ed9a9e47c">
+      <Execution id="2ed0c2e6-cad6-4625-8acf-6070d8b107fe" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.GameTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetAndSetResult" />
+    </UnitTest>
+    <UnitTest name="MoveUpLadderLowRankSameRung" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="9f4bcc68-cea5-1bd3-1613-dab28d76f1f1">
+      <Execution id="32f40a17-16be-4802-b738-f380db522d71" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.RankTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MoveUpLadderLowRankSameRung" />
+    </UnitTest>
+    <UnitTest name="DeletingMiddlePlayerInListKeepsOthers" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="4728f28a-4d7d-4b7e-5fa3-82896872a9b7">
+      <Execution id="31dc3212-539b-4c99-b9ee-9fe763c82f49" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.LadderTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DeletingMiddlePlayerInListKeepsOthers" />
+    </UnitTest>
+    <UnitTest name="GetAndSetGameIDs" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="95357a55-a90a-984e-1885-391e86c16de5">
+      <Execution id="027fe811-ba9a-474e-a36b-86319fa3b42b" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.GameTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetAndSetGameIDs" />
+    </UnitTest>
+    <UnitTest name="MoveUpLadderHighRankSameRung" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="d6c5c455-0200-0c5f-1ca0-f844ca7cc5e6">
+      <Execution id="68d66cb2-7816-4b5b-a486-878117b26c1f" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.RankTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MoveUpLadderHighRankSameRung" />
+    </UnitTest>
+    <UnitTest name="SuccessfulAdditionOfPlayerReturnsTrue" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="fd85e99d-a608-c68f-dc6c-26c250b86ddb">
+      <Execution id="8a96da42-d996-4e49-b536-06b36bae5e01" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.LadderTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SuccessfulAdditionOfPlayerReturnsTrue" />
+    </UnitTest>
+    <UnitTest name="NumberOfPlayersIsZeroWhenLadderIsCreated" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="d0c1f593-6311-123a-0e86-11e9e47b56f1">
+      <Execution id="2114c42d-3509-4880-b63f-e5f6bfe86f37" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.LadderTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumberOfPlayersIsZeroWhenLadderIsCreated" />
+    </UnitTest>
+    <UnitTest name="RemovePlayerDeletesPlayerFromList" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="9d466d43-57e0-e13f-406f-a50d15eddf06">
+      <Execution id="32f5f3f5-9a1a-4242-b7ba-96bd9538ec95" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.LadderTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RemovePlayerDeletesPlayerFromList" />
+    </UnitTest>
+    <UnitTest name="NewPlayerDefaultRungIsMiddleRung" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="4c58c331-f849-3000-be35-14d9061a5823">
+      <Execution id="dd172967-53ce-433a-acd1-fefd95590065" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.PlayerTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NewPlayerDefaultRungIsMiddleRung" />
+    </UnitTest>
+    <UnitTest name="DefaultRankAndRungPositionForNoRank" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="bc5bb353-beec-1029-110e-45d43b7d36de">
+      <Execution id="560cc779-40d9-4c08-b0dc-ff3fd2f8a12d" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.RankTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DefaultRankAndRungPositionForNoRank" />
+    </UnitTest>
+    <UnitTest name="DontMoveDownWhenAtBottomOfRank" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="1e309648-fdb7-1ca9-2ccb-3341883b6e78">
+      <Execution id="e3336b1b-1351-47f3-b987-7d4273e200a4" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.RankTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DontMoveDownWhenAtBottomOfRank" />
+    </UnitTest>
+    <UnitTest name="SetNewPlayerThroughConstructor" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="b9a76c99-9145-d3be-9648-207ab5a64d1d">
+      <Execution id="5482857d-c032-46a5-9490-09b2b3bc958c" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.PlayerTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SetNewPlayerThroughConstructor" />
+    </UnitTest>
+    <UnitTest name="NewPlayerDefaultRankIsThirtySixKyu" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="e1e7dca0-9e9e-6051-146d-d722cd8342c2">
+      <Execution id="e1b6fea9-8938-4fcc-9bd6-892ccfb19539" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.PlayerTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NewPlayerDefaultRankIsThirtySixKyu" />
+    </UnitTest>
+    <UnitTest name="FindMultiplePlayersFromListWithSameRank" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="600ddbfa-ef02-6d8c-d2c3-758d98370518">
+      <Execution id="fb602f65-9d56-4e28-bd6a-1dac5cad7246" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.LadderTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="FindMultiplePlayersFromListWithSameRank" />
+    </UnitTest>
+    <UnitTest name="AddPlayerToEmptyList" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="9c7cd945-ae56-70d6-75ed-6d2cb2527a98">
+      <Execution id="97215cff-d5a3-4637-9ba2-e82b8d4a7018" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.LadderTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddPlayerToEmptyList" />
+    </UnitTest>
+    <UnitTest name="GetAndSetKome" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="cfdd0afd-a0ff-6599-daed-2d0922d73600">
+      <Execution id="a6c899ba-538d-41a3-a120-2b8869960db1" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.GameTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetAndSetKome" />
+    </UnitTest>
+    <UnitTest name="SetAndGetPlayerName" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="67059977-9af9-0f9c-579a-97c264c1fea9">
+      <Execution id="9e430ae2-c9af-4a7f-b1f7-693a48518de3" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.PlayerTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SetAndGetPlayerName" />
+    </UnitTest>
+    <UnitTest name="SetAndGetRankNumber" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="d773416e-fef5-3b6e-144e-948cb8ea0d98">
+      <Execution id="3daf59b7-69dc-478c-b65b-c00e738ce011" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.RankTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SetAndGetRankNumber" />
+    </UnitTest>
+    <UnitTest name="SetAndGetRungPosition" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="905be7a8-7e05-39eb-8812-44a945cef830">
+      <Execution id="6ec4753b-de9b-4cdc-8645-5af7bdb5cf68" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.RankTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SetAndGetRungPosition" />
+    </UnitTest>
+    <UnitTest name="MoveDownLowRankSameRung" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="ae891c73-20d7-5d76-f328-312bfa18c043">
+      <Execution id="5af7ddb4-def7-4644-a531-f19ce34265d0" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.RankTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MoveDownLowRankSameRung" />
+    </UnitTest>
+    <UnitTest name="AddingGamesIncreasesTheCounter" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="f42d09ae-52a3-200f-0901-bbee3d444db0">
+      <Execution id="52868bc2-e4f9-44dc-8ec4-6583c5d90f66" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.LadderTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddingGamesIncreasesTheCounter" />
+    </UnitTest>
+    <UnitTest name="GetAndSetPlayerIDs" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="1f0fbcf2-6581-ef86-a08f-6fd33cfce2ec">
+      <Execution id="ef440ff9-f6fc-4db1-bb31-544805c05710" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.GameTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetAndSetPlayerIDs" />
+    </UnitTest>
+    <UnitTest name="MoveDownLowRankDownARung" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="4f9e1d56-3488-73dc-57ff-29733bf87e53">
+      <Execution id="329b1d8c-1a2a-434a-aa40-b064cb9e772a" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.RankTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MoveDownLowRankDownARung" />
+    </UnitTest>
+    <UnitTest name="MoveUpLadderMiddleRankSameRung" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="c742a09f-f8a7-bcd1-20b1-7943bfc33032">
+      <Execution id="94bbdf28-8549-4309-a3c1-a9a3820925e3" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.RankTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MoveUpLadderMiddleRankSameRung" />
+    </UnitTest>
+    <UnitTest name="SetRankThroughConstructor" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="e4bdd4dc-077a-bfcc-95b9-34c52cea8f78">
+      <Execution id="5f1aee19-2a21-44af-8b3f-be5d5b7f45f1" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.RankTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SetRankThroughConstructor" />
+    </UnitTest>
+    <UnitTest name="GetPlayerList" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="dcdeb500-633d-bf44-5247-029b959a498e">
+      <Execution id="2a76716a-1478-43c1-aa03-6ac8a033cdd4" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.LadderTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetPlayerList" />
+    </UnitTest>
+    <UnitTest name="GetAndSetGameDetailsThroughConstructor" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="cd222bde-05e0-66f9-2698-02ea106ea06e">
+      <Execution id="a98fd861-54d5-4cb9-a03e-737f9d3113b4" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.GameTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetAndSetGameDetailsThroughConstructor" />
+    </UnitTest>
+    <UnitTest name="TestMethod1" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="a196d2db-b595-47e8-0f85-ff9cf91d15cd">
+      <Execution id="1aeeef22-d5c3-4033-b5a0-ebe713be39a1" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1VSTests.UnitTest1, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+    <UnitTest name="SetRankAndRungThroughConstructor" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="696749bd-8b0e-3c67-b880-8439a4e40a03">
+      <Execution id="58ddec6e-bdd3-4e46-9ab9-e89fd34f8d56" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.RankTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SetRankAndRungThroughConstructor" />
+    </UnitTest>
+    <UnitTest name="FindPlayerFromListWithRank" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="a24bee60-f458-a544-3227-7790753b1431">
+      <Execution id="df34ddde-405e-4360-a8b3-d939f8ce48c2" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.LadderTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="FindPlayerFromListWithRank" />
+    </UnitTest>
+    <UnitTest name="MoveDownHighRankSameRung" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="c49ee672-b73a-bc6c-ef5b-ba89f980a4ad">
+      <Execution id="05167cb1-0a03-4b67-9192-76effc06189d" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.RankTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MoveDownHighRankSameRung" />
+    </UnitTest>
+    <UnitTest name="MoveDownMidRankDownARung" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="bae7745a-4345-aa97-8f60-00319ccaf741">
+      <Execution id="0dd34056-132a-4f28-b52e-8deadc0ad08c" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.RankTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MoveDownMidRankDownARung" />
+    </UnitTest>
+    <UnitTest name="DontMoveUpLadderMaxRankAndRung" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="707c250f-7066-876a-084e-a2f9385e4478">
+      <Execution id="f6bab5d7-b72c-40fe-b4aa-edc85777f095" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.RankTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DontMoveUpLadderMaxRankAndRung" />
+    </UnitTest>
+    <UnitTest name="NewLadderHasNoGames" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="7a3046a4-7408-bf7f-c22c-0609c577acfc">
+      <Execution id="75abe45f-a207-431a-9de2-2960dd30bc4d" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.LadderTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NewLadderHasNoGames" />
+    </UnitTest>
+    <UnitTest name="GetNameofLastPlayerInList" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="df81cc9e-0f81-56b6-437b-3ea19bc5fcee">
+      <Execution id="7249566e-0678-4bc9-9a60-7aea8b714642" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.LadderTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetNameofLastPlayerInList" />
+    </UnitTest>
+    <UnitTest name="SetAndGetPlayerID" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="2a5a8da3-8c92-50ab-0864-63a216de8ddd">
+      <Execution id="9ee351d2-f479-487b-bc58-8afe8ac9ba6c" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.PlayerTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SetAndGetPlayerID" />
+    </UnitTest>
+    <UnitTest name="DeletingLastPlayerInListAndAddingPlayerAfterwards" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="4725964d-137f-9e85-7745-acc949cbd904">
+      <Execution id="c7f35473-918f-46f1-9d24-ee9f8a7915ad" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.LadderTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DeletingLastPlayerInListAndAddingPlayerAfterwards" />
+    </UnitTest>
+    <UnitTest name="MoveDownMidRankSameRung" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="f8c40a45-ee90-819c-6717-2648ff00657f">
+      <Execution id="da4ee848-b8c9-4d15-8fd2-9738fb86170a" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.RankTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MoveDownMidRankSameRung" />
+    </UnitTest>
+    <UnitTest name="MoveUpLadderMiddleRankUpARung" storage="c:\personal\go\testproject1\project1vstests\bin\debug\project1vstests.dll" id="b30a6818-dbc9-f1df-a7b3-fa7d73c7249e">
+      <Execution id="8bc62a44-838c-46f2-b3e4-217512576c3e" />
+      <TestMethod codeBase="C:/Personal/Go/TestProject1/Project1VSTests/bin/Debug/Project1VSTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Project1.RankTests, Project1VSTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MoveUpLadderMiddleRankUpARung" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="a196d2db-b595-47e8-0f85-ff9cf91d15cd" executionId="1aeeef22-d5c3-4033-b5a0-ebe713be39a1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1f0fbcf2-6581-ef86-a08f-6fd33cfce2ec" executionId="ef440ff9-f6fc-4db1-bb31-544805c05710" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="95357a55-a90a-984e-1885-391e86c16de5" executionId="027fe811-ba9a-474e-a36b-86319fa3b42b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c11181c1-a3ce-72fd-52a3-a05ed9a9e47c" executionId="2ed0c2e6-cad6-4625-8acf-6070d8b107fe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cfdd0afd-a0ff-6599-daed-2d0922d73600" executionId="a6c899ba-538d-41a3-a120-2b8869960db1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cd222bde-05e0-66f9-2698-02ea106ea06e" executionId="a98fd861-54d5-4cb9-a03e-737f9d3113b4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d0c1f593-6311-123a-0e86-11e9e47b56f1" executionId="2114c42d-3509-4880-b63f-e5f6bfe86f37" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9c7cd945-ae56-70d6-75ed-6d2cb2527a98" executionId="97215cff-d5a3-4637-9ba2-e82b8d4a7018" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dcdeb500-633d-bf44-5247-029b959a498e" executionId="2a76716a-1478-43c1-aa03-6ac8a033cdd4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bf2d210f-499d-db34-fdc7-38401fadd68c" executionId="9ea6c2d4-dc98-4b24-996d-7f02d181e58d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="df81cc9e-0f81-56b6-437b-3ea19bc5fcee" executionId="7249566e-0678-4bc9-9a60-7aea8b714642" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fd85e99d-a608-c68f-dc6c-26c250b86ddb" executionId="8a96da42-d996-4e49-b536-06b36bae5e01" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9d466d43-57e0-e13f-406f-a50d15eddf06" executionId="32f5f3f5-9a1a-4242-b7ba-96bd9538ec95" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="63417751-7623-be38-a4d3-37490ad4706f" executionId="921ea4ca-8ee3-4038-b5c1-5be637cfdcae" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a24bee60-f458-a544-3227-7790753b1431" executionId="df34ddde-405e-4360-a8b3-d939f8ce48c2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="600ddbfa-ef02-6d8c-d2c3-758d98370518" executionId="fb602f65-9d56-4e28-bd6a-1dac5cad7246" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4728f28a-4d7d-4b7e-5fa3-82896872a9b7" executionId="31dc3212-539b-4c99-b9ee-9fe763c82f49" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4725964d-137f-9e85-7745-acc949cbd904" executionId="c7f35473-918f-46f1-9d24-ee9f8a7915ad" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7a3046a4-7408-bf7f-c22c-0609c577acfc" executionId="75abe45f-a207-431a-9de2-2960dd30bc4d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f42d09ae-52a3-200f-0901-bbee3d444db0" executionId="52868bc2-e4f9-44dc-8ec4-6583c5d90f66" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c8c2dc19-5f39-1c20-c766-3762219651c1" executionId="54915131-8474-4532-960e-18ca9ae38153" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="67059977-9af9-0f9c-579a-97c264c1fea9" executionId="9e430ae2-c9af-4a7f-b1f7-693a48518de3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2a5a8da3-8c92-50ab-0864-63a216de8ddd" executionId="9ee351d2-f479-487b-bc58-8afe8ac9ba6c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e1e7dca0-9e9e-6051-146d-d722cd8342c2" executionId="e1b6fea9-8938-4fcc-9bd6-892ccfb19539" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4c58c331-f849-3000-be35-14d9061a5823" executionId="dd172967-53ce-433a-acd1-fefd95590065" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b9a76c99-9145-d3be-9648-207ab5a64d1d" executionId="5482857d-c032-46a5-9490-09b2b3bc958c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d773416e-fef5-3b6e-144e-948cb8ea0d98" executionId="3daf59b7-69dc-478c-b65b-c00e738ce011" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="905be7a8-7e05-39eb-8812-44a945cef830" executionId="6ec4753b-de9b-4cdc-8645-5af7bdb5cf68" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bc5bb353-beec-1029-110e-45d43b7d36de" executionId="560cc779-40d9-4c08-b0dc-ff3fd2f8a12d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e4bdd4dc-077a-bfcc-95b9-34c52cea8f78" executionId="5f1aee19-2a21-44af-8b3f-be5d5b7f45f1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="696749bd-8b0e-3c67-b880-8439a4e40a03" executionId="58ddec6e-bdd3-4e46-9ab9-e89fd34f8d56" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9f4bcc68-cea5-1bd3-1613-dab28d76f1f1" executionId="32f40a17-16be-4802-b738-f380db522d71" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b216a52f-2c4d-0364-703c-8d5add28730d" executionId="3a670833-01cd-4149-876b-b914b37fd5ad" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b30a6818-dbc9-f1df-a7b3-fa7d73c7249e" executionId="8bc62a44-838c-46f2-b3e4-217512576c3e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c742a09f-f8a7-bcd1-20b1-7943bfc33032" executionId="94bbdf28-8549-4309-a3c1-a9a3820925e3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4d603034-9b20-4167-7863-d6342775eb94" executionId="73750457-2754-405f-91ff-70bc60d77eda" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d6c5c455-0200-0c5f-1ca0-f844ca7cc5e6" executionId="68d66cb2-7816-4b5b-a486-878117b26c1f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="707c250f-7066-876a-084e-a2f9385e4478" executionId="f6bab5d7-b72c-40fe-b4aa-edc85777f095" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ae891c73-20d7-5d76-f328-312bfa18c043" executionId="5af7ddb4-def7-4644-a531-f19ce34265d0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4f9e1d56-3488-73dc-57ff-29733bf87e53" executionId="329b1d8c-1a2a-434a-aa40-b064cb9e772a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f8c40a45-ee90-819c-6717-2648ff00657f" executionId="da4ee848-b8c9-4d15-8fd2-9738fb86170a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bae7745a-4345-aa97-8f60-00319ccaf741" executionId="0dd34056-132a-4f28-b52e-8deadc0ad08c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c49ee672-b73a-bc6c-ef5b-ba89f980a4ad" executionId="05167cb1-0a03-4b67-9192-76effc06189d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bed63836-32d0-838c-d496-ce4fc91f6c1f" executionId="fa5cd38c-8dcf-4dd5-8165-ba888bea08b1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1e309648-fdb7-1ca9-2ccb-3341883b6e78" executionId="e3336b1b-1351-47f3-b987-7d4273e200a4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="1aeeef22-d5c3-4033-b5a0-ebe713be39a1" testId="a196d2db-b595-47e8-0f85-ff9cf91d15cd" testName="TestMethod1" computerName="ADI" duration="00:00:00.0123789" startTime="2012-11-22T23:47:48.4540382+00:00" endTime="2012-11-22T23:47:48.7060526+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1aeeef22-d5c3-4033-b5a0-ebe713be39a1">
+    </UnitTestResult>
+    <UnitTestResult executionId="ef440ff9-f6fc-4db1-bb31-544805c05710" testId="1f0fbcf2-6581-ef86-a08f-6fd33cfce2ec" testName="GetAndSetPlayerIDs" computerName="ADI" duration="00:00:00.0223792" startTime="2012-11-22T23:47:48.7140531+00:00" endTime="2012-11-22T23:47:48.7410546+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ef440ff9-f6fc-4db1-bb31-544805c05710">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;10 (System.Int32)&gt;. Actual:&lt;10 (System.UInt32)&gt;. </Message>
+          <StackTrace>   at Project1.GameTests.GetAndSetPlayerIDs() in c:\Personal\Go\TestProject1\Project1VSTests\GameTests.cs:line 20
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="027fe811-ba9a-474e-a36b-86319fa3b42b" testId="95357a55-a90a-984e-1885-391e86c16de5" testName="GetAndSetGameIDs" computerName="ADI" duration="00:00:00.0016929" startTime="2012-11-22T23:47:48.7520552+00:00" endTime="2012-11-22T23:47:48.7570555+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="027fe811-ba9a-474e-a36b-86319fa3b42b">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;1000 (System.Int32)&gt;. Actual:&lt;1000 (System.UInt32)&gt;. </Message>
+          <StackTrace>   at Project1.GameTests.GetAndSetGameIDs() in c:\Personal\Go\TestProject1\Project1VSTests\GameTests.cs:line 34
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2ed0c2e6-cad6-4625-8acf-6070d8b107fe" testId="c11181c1-a3ce-72fd-52a3-a05ed9a9e47c" testName="GetAndSetResult" computerName="ADI" duration="00:00:00.0012831" startTime="2012-11-22T23:47:48.7640559+00:00" endTime="2012-11-22T23:47:48.7700563+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2ed0c2e6-cad6-4625-8acf-6070d8b107fe">
+    </UnitTestResult>
+    <UnitTestResult executionId="a6c899ba-538d-41a3-a120-2b8869960db1" testId="cfdd0afd-a0ff-6599-daed-2d0922d73600" testName="GetAndSetKome" computerName="ADI" duration="00:00:00.0016172" startTime="2012-11-22T23:47:48.7760566+00:00" endTime="2012-11-22T23:47:48.7810569+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a6c899ba-538d-41a3-a120-2b8869960db1">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;25 (System.Int32)&gt;. Actual:&lt;25 (System.UInt32)&gt;. </Message>
+          <StackTrace>   at Project1.GameTests.GetAndSetKome() in c:\Personal\Go\TestProject1\Project1VSTests\GameTests.cs:line 54
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a98fd861-54d5-4cb9-a03e-737f9d3113b4" testId="cd222bde-05e0-66f9-2698-02ea106ea06e" testName="GetAndSetGameDetailsThroughConstructor" computerName="ADI" duration="00:00:00.0018191" startTime="2012-11-22T23:47:48.7880573+00:00" endTime="2012-11-22T23:47:48.7930576+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a98fd861-54d5-4cb9-a03e-737f9d3113b4">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;155 (System.Int32)&gt;. Actual:&lt;155 (System.UInt32)&gt;. </Message>
+          <StackTrace>   at Project1.GameTests.GetAndSetGameDetailsThroughConstructor() in c:\Personal\Go\TestProject1\Project1VSTests\GameTests.cs:line 62
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2114c42d-3509-4880-b63f-e5f6bfe86f37" testId="d0c1f593-6311-123a-0e86-11e9e47b56f1" testName="NumberOfPlayersIsZeroWhenLadderIsCreated" computerName="ADI" duration="00:00:00.0028769" startTime="2012-11-22T23:47:48.7970578+00:00" endTime="2012-11-22T23:47:48.8040582+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2114c42d-3509-4880-b63f-e5f6bfe86f37">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0 (System.Int32)&gt;. Actual:&lt;0 (System.UInt32)&gt;. </Message>
+          <StackTrace>   at Project1.LadderTests.NumberOfPlayersIsZeroWhenLadderIsCreated() in c:\Personal\Go\TestProject1\Project1VSTests\LadderTests.cs:line 18
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="97215cff-d5a3-4637-9ba2-e82b8d4a7018" testId="9c7cd945-ae56-70d6-75ed-6d2cb2527a98" testName="AddPlayerToEmptyList" computerName="ADI" duration="00:00:00.0023807" startTime="2012-11-22T23:47:48.8070584+00:00" endTime="2012-11-22T23:47:48.8130587+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="97215cff-d5a3-4637-9ba2-e82b8d4a7018">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;1 (System.Int32)&gt;. Actual:&lt;1 (System.UInt32)&gt;. </Message>
+          <StackTrace>   at Project1.LadderTests.AddPlayerToEmptyList() in c:\Personal\Go\TestProject1\Project1VSTests\LadderTests.cs:line 29
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2a76716a-1478-43c1-aa03-6ac8a033cdd4" testId="dcdeb500-633d-bf44-5247-029b959a498e" testName="GetPlayerList" computerName="ADI" duration="00:00:00.0003926" startTime="2012-11-22T23:47:48.8170589+00:00" endTime="2012-11-22T23:47:48.8210592+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2a76716a-1478-43c1-aa03-6ac8a033cdd4">
+    </UnitTestResult>
+    <UnitTestResult executionId="9ea6c2d4-dc98-4b24-996d-7f02d181e58d" testId="bf2d210f-499d-db34-fdc7-38401fadd68c" testName="GetIDofLastPlayerInList" computerName="ADI" duration="00:00:00.0018139" startTime="2012-11-22T23:47:48.8250594+00:00" endTime="2012-11-22T23:47:48.8300597+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9ea6c2d4-dc98-4b24-996d-7f02d181e58d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;1 (System.Int32)&gt;. Actual:&lt;1 (System.UInt32)&gt;. </Message>
+          <StackTrace>   at Project1.LadderTests.GetIDofLastPlayerInList() in c:\Personal\Go\TestProject1\Project1VSTests\LadderTests.cs:line 57
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7249566e-0678-4bc9-9a60-7aea8b714642" testId="df81cc9e-0f81-56b6-437b-3ea19bc5fcee" testName="GetNameofLastPlayerInList" computerName="ADI" duration="00:00:00.0004273" startTime="2012-11-22T23:47:48.8340599+00:00" endTime="2012-11-22T23:47:48.8380601+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7249566e-0678-4bc9-9a60-7aea8b714642">
+    </UnitTestResult>
+    <UnitTestResult executionId="8a96da42-d996-4e49-b536-06b36bae5e01" testId="fd85e99d-a608-c68f-dc6c-26c250b86ddb" testName="SuccessfulAdditionOfPlayerReturnsTrue" computerName="ADI" duration="00:00:00.0002536" startTime="2012-11-22T23:47:48.8410603+00:00" endTime="2012-11-22T23:47:48.8460606+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8a96da42-d996-4e49-b536-06b36bae5e01">
+    </UnitTestResult>
+    <UnitTestResult executionId="32f5f3f5-9a1a-4242-b7ba-96bd9538ec95" testId="9d466d43-57e0-e13f-406f-a50d15eddf06" testName="RemovePlayerDeletesPlayerFromList" computerName="ADI" duration="00:00:00.0021193" startTime="2012-11-22T23:47:48.8490608+00:00" endTime="2012-11-22T23:47:48.8540611+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="32f5f3f5-9a1a-4242-b7ba-96bd9538ec95">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsNull failed. </Message>
+          <StackTrace>   at Project1.LadderTests.RemovePlayerDeletesPlayerFromList() in c:\Personal\Go\TestProject1\Project1VSTests\LadderTests.cs:line 95
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="921ea4ca-8ee3-4038-b5c1-5be637cfdcae" testId="63417751-7623-be38-a4d3-37490ad4706f" testName="FindPlayerFromListWithName" computerName="ADI" duration="00:00:00.0008019" startTime="2012-11-22T23:47:48.8600614+00:00" endTime="2012-11-22T23:47:48.8640616+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="921ea4ca-8ee3-4038-b5c1-5be637cfdcae">
+    </UnitTestResult>
+    <UnitTestResult executionId="df34ddde-405e-4360-a8b3-d939f8ce48c2" testId="a24bee60-f458-a544-3227-7790753b1431" testName="FindPlayerFromListWithRank" computerName="ADI" duration="00:00:00.0011942" startTime="2012-11-22T23:47:48.8670618+00:00" endTime="2012-11-22T23:47:48.8730621+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="df34ddde-405e-4360-a8b3-d939f8ce48c2">
+    </UnitTestResult>
+    <UnitTestResult executionId="fb602f65-9d56-4e28-bd6a-1dac5cad7246" testId="600ddbfa-ef02-6d8c-d2c3-758d98370518" testName="FindMultiplePlayersFromListWithSameRank" computerName="ADI" duration="00:00:00.0004598" startTime="2012-11-22T23:47:48.8770624+00:00" endTime="2012-11-22T23:47:48.8800625+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fb602f65-9d56-4e28-bd6a-1dac5cad7246">
+    </UnitTestResult>
+    <UnitTestResult executionId="31dc3212-539b-4c99-b9ee-9fe763c82f49" testId="4728f28a-4d7d-4b7e-5fa3-82896872a9b7" testName="DeletingMiddlePlayerInListKeepsOthers" computerName="ADI" duration="00:00:00.0004619" startTime="2012-11-22T23:47:48.8840628+00:00" endTime="2012-11-22T23:47:48.8870629+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="31dc3212-539b-4c99-b9ee-9fe763c82f49">
+    </UnitTestResult>
+    <UnitTestResult executionId="c7f35473-918f-46f1-9d24-ee9f8a7915ad" testId="4725964d-137f-9e85-7745-acc949cbd904" testName="DeletingLastPlayerInListAndAddingPlayerAfterwards" computerName="ADI" duration="00:00:00.0004790" startTime="2012-11-22T23:47:48.8910632+00:00" endTime="2012-11-22T23:47:48.8950634+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c7f35473-918f-46f1-9d24-ee9f8a7915ad">
+    </UnitTestResult>
+    <UnitTestResult executionId="75abe45f-a207-431a-9de2-2960dd30bc4d" testId="7a3046a4-7408-bf7f-c22c-0609c577acfc" testName="NewLadderHasNoGames" computerName="ADI" duration="00:00:00.0015308" startTime="2012-11-22T23:47:48.8990636+00:00" endTime="2012-11-22T23:47:48.9030639+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="75abe45f-a207-431a-9de2-2960dd30bc4d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0 (System.Int32)&gt;. Actual:&lt;0 (System.UInt32)&gt;. </Message>
+          <StackTrace>   at Project1.LadderTests.NewLadderHasNoGames() in c:\Personal\Go\TestProject1\Project1VSTests\LadderTests.cs:line 217
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="52868bc2-e4f9-44dc-8ec4-6583c5d90f66" testId="f42d09ae-52a3-200f-0901-bbee3d444db0" testName="AddingGamesIncreasesTheCounter" computerName="ADI" duration="00:00:00.0057580" startTime="2012-11-22T23:47:48.9060640+00:00" endTime="2012-11-22T23:47:48.9160646+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="52868bc2-e4f9-44dc-8ec4-6583c5d90f66">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;1 (System.Int32)&gt;. Actual:&lt;1 (System.UInt32)&gt;. </Message>
+          <StackTrace>   at Project1.LadderTests.AddingGamesIncreasesTheCounter() in c:\Personal\Go\TestProject1\Project1VSTests\LadderTests.cs:line 228
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="54915131-8474-4532-960e-18ca9ae38153" testId="c8c2dc19-5f39-1c20-c766-3762219651c1" testName="AddingGamesAutomaticallyAddsGameID" computerName="ADI" duration="00:00:00.0017096" startTime="2012-11-22T23:47:48.9180647+00:00" endTime="2012-11-22T23:47:48.9230650+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="54915131-8474-4532-960e-18ca9ae38153">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;1 (System.Int32)&gt;. Actual:&lt;1 (System.UInt32)&gt;. </Message>
+          <StackTrace>   at Project1.LadderTests.AddingGamesAutomaticallyAddsGameID() in c:\Personal\Go\TestProject1\Project1VSTests\LadderTests.cs:line 243
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9e430ae2-c9af-4a7f-b1f7-693a48518de3" testId="67059977-9af9-0f9c-579a-97c264c1fea9" testName="SetAndGetPlayerName" computerName="ADI" duration="00:00:00.0004037" startTime="2012-11-22T23:47:48.9250651+00:00" endTime="2012-11-22T23:47:48.9280653+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9e430ae2-c9af-4a7f-b1f7-693a48518de3">
+    </UnitTestResult>
+    <UnitTestResult executionId="9ee351d2-f479-487b-bc58-8afe8ac9ba6c" testId="2a5a8da3-8c92-50ab-0864-63a216de8ddd" testName="SetAndGetPlayerID" computerName="ADI" duration="00:00:00.0009619" startTime="2012-11-22T23:47:48.9300654+00:00" endTime="2012-11-22T23:47:48.9330656+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9ee351d2-f479-487b-bc58-8afe8ac9ba6c">
+    </UnitTestResult>
+    <UnitTestResult executionId="e1b6fea9-8938-4fcc-9bd6-892ccfb19539" testId="e1e7dca0-9e9e-6051-146d-d722cd8342c2" testName="NewPlayerDefaultRankIsThirtySixKyu" computerName="ADI" duration="00:00:00.0009209" startTime="2012-11-22T23:47:48.9360658+00:00" endTime="2012-11-22T23:47:48.9390659+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e1b6fea9-8938-4fcc-9bd6-892ccfb19539">
+    </UnitTestResult>
+    <UnitTestResult executionId="dd172967-53ce-433a-acd1-fefd95590065" testId="4c58c331-f849-3000-be35-14d9061a5823" testName="NewPlayerDefaultRungIsMiddleRung" computerName="ADI" duration="00:00:00.0010406" startTime="2012-11-22T23:47:48.9410660+00:00" endTime="2012-11-22T23:47:48.9450663+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dd172967-53ce-433a-acd1-fefd95590065">
+    </UnitTestResult>
+    <UnitTestResult executionId="5482857d-c032-46a5-9490-09b2b3bc958c" testId="b9a76c99-9145-d3be-9648-207ab5a64d1d" testName="SetNewPlayerThroughConstructor" computerName="ADI" duration="00:00:00.0003049" startTime="2012-11-22T23:47:48.9480664+00:00" endTime="2012-11-22T23:47:48.9500666+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5482857d-c032-46a5-9490-09b2b3bc958c">
+    </UnitTestResult>
+    <UnitTestResult executionId="3daf59b7-69dc-478c-b65b-c00e738ce011" testId="d773416e-fef5-3b6e-144e-948cb8ea0d98" testName="SetAndGetRankNumber" computerName="ADI" duration="00:00:00.0002972" startTime="2012-11-22T23:47:48.9530667+00:00" endTime="2012-11-22T23:47:48.9550668+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3daf59b7-69dc-478c-b65b-c00e738ce011">
+    </UnitTestResult>
+    <UnitTestResult executionId="6ec4753b-de9b-4cdc-8645-5af7bdb5cf68" testId="905be7a8-7e05-39eb-8812-44a945cef830" testName="SetAndGetRungPosition" computerName="ADI" duration="00:00:00.0002326" startTime="2012-11-22T23:47:48.9580670+00:00" endTime="2012-11-22T23:47:48.9610672+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6ec4753b-de9b-4cdc-8645-5af7bdb5cf68">
+    </UnitTestResult>
+    <UnitTestResult executionId="560cc779-40d9-4c08-b0dc-ff3fd2f8a12d" testId="bc5bb353-beec-1029-110e-45d43b7d36de" testName="DefaultRankAndRungPositionForNoRank" computerName="ADI" duration="00:00:00.0002425" startTime="2012-11-22T23:47:48.9630673+00:00" endTime="2012-11-22T23:47:48.9650674+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="560cc779-40d9-4c08-b0dc-ff3fd2f8a12d">
+    </UnitTestResult>
+    <UnitTestResult executionId="5f1aee19-2a21-44af-8b3f-be5d5b7f45f1" testId="e4bdd4dc-077a-bfcc-95b9-34c52cea8f78" testName="SetRankThroughConstructor" computerName="ADI" duration="00:00:00.0003165" startTime="2012-11-22T23:47:48.9680676+00:00" endTime="2012-11-22T23:47:48.9710678+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5f1aee19-2a21-44af-8b3f-be5d5b7f45f1">
+    </UnitTestResult>
+    <UnitTestResult executionId="58ddec6e-bdd3-4e46-9ab9-e89fd34f8d56" testId="696749bd-8b0e-3c67-b880-8439a4e40a03" testName="SetRankAndRungThroughConstructor" computerName="ADI" duration="00:00:00.0003246" startTime="2012-11-22T23:47:48.9730679+00:00" endTime="2012-11-22T23:47:48.9760680+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="58ddec6e-bdd3-4e46-9ab9-e89fd34f8d56">
+    </UnitTestResult>
+    <UnitTestResult executionId="32f40a17-16be-4802-b738-f380db522d71" testId="9f4bcc68-cea5-1bd3-1613-dab28d76f1f1" testName="MoveUpLadderLowRankSameRung" computerName="ADI" duration="00:00:00.0004324" startTime="2012-11-22T23:47:48.9790682+00:00" endTime="2012-11-22T23:47:48.9820684+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="32f40a17-16be-4802-b738-f380db522d71">
+    </UnitTestResult>
+    <UnitTestResult executionId="3a670833-01cd-4149-876b-b914b37fd5ad" testId="b216a52f-2c4d-0364-703c-8d5add28730d" testName="MoveUpLadderLowRankUpARung" computerName="ADI" duration="00:00:00.0002733" startTime="2012-11-22T23:47:48.9840685+00:00" endTime="2012-11-22T23:47:48.9870687+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3a670833-01cd-4149-876b-b914b37fd5ad">
+    </UnitTestResult>
+    <UnitTestResult executionId="8bc62a44-838c-46f2-b3e4-217512576c3e" testId="b30a6818-dbc9-f1df-a7b3-fa7d73c7249e" testName="MoveUpLadderMiddleRankUpARung" computerName="ADI" duration="00:00:00.0002716" startTime="2012-11-22T23:47:48.9910689+00:00" endTime="2012-11-22T23:47:48.9930690+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8bc62a44-838c-46f2-b3e4-217512576c3e">
+    </UnitTestResult>
+    <UnitTestResult executionId="94bbdf28-8549-4309-a3c1-a9a3820925e3" testId="c742a09f-f8a7-bcd1-20b1-7943bfc33032" testName="MoveUpLadderMiddleRankSameRung" computerName="ADI" duration="00:00:00.0004448" startTime="2012-11-22T23:47:48.9970692+00:00" endTime="2012-11-22T23:47:49.0010695+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="94bbdf28-8549-4309-a3c1-a9a3820925e3">
+    </UnitTestResult>
+    <UnitTestResult executionId="73750457-2754-405f-91ff-70bc60d77eda" testId="4d603034-9b20-4167-7863-d6342775eb94" testName="MoveUpLadderHighRankUpARung" computerName="ADI" duration="00:00:00.0004632" startTime="2012-11-22T23:47:49.0050697+00:00" endTime="2012-11-22T23:47:49.0080699+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="73750457-2754-405f-91ff-70bc60d77eda">
+    </UnitTestResult>
+    <UnitTestResult executionId="68d66cb2-7816-4b5b-a486-878117b26c1f" testId="d6c5c455-0200-0c5f-1ca0-f844ca7cc5e6" testName="MoveUpLadderHighRankSameRung" computerName="ADI" duration="00:00:00.0005068" startTime="2012-11-22T23:47:49.0130702+00:00" endTime="2012-11-22T23:47:49.0170704+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="68d66cb2-7816-4b5b-a486-878117b26c1f">
+    </UnitTestResult>
+    <UnitTestResult executionId="f6bab5d7-b72c-40fe-b4aa-edc85777f095" testId="707c250f-7066-876a-084e-a2f9385e4478" testName="DontMoveUpLadderMaxRankAndRung" computerName="ADI" duration="00:00:00.0005231" startTime="2012-11-22T23:47:49.0220707+00:00" endTime="2012-11-22T23:47:49.0270710+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f6bab5d7-b72c-40fe-b4aa-edc85777f095">
+    </UnitTestResult>
+    <UnitTestResult executionId="5af7ddb4-def7-4644-a531-f19ce34265d0" testId="ae891c73-20d7-5d76-f328-312bfa18c043" testName="MoveDownLowRankSameRung" computerName="ADI" duration="00:00:00.0005975" startTime="2012-11-22T23:47:49.0320712+00:00" endTime="2012-11-22T23:47:49.0360715+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5af7ddb4-def7-4644-a531-f19ce34265d0">
+    </UnitTestResult>
+    <UnitTestResult executionId="329b1d8c-1a2a-434a-aa40-b064cb9e772a" testId="4f9e1d56-3488-73dc-57ff-29733bf87e53" testName="MoveDownLowRankDownARung" computerName="ADI" duration="00:00:00.0003361" startTime="2012-11-22T23:47:49.0410718+00:00" endTime="2012-11-22T23:47:49.0450720+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="329b1d8c-1a2a-434a-aa40-b064cb9e772a">
+    </UnitTestResult>
+    <UnitTestResult executionId="da4ee848-b8c9-4d15-8fd2-9738fb86170a" testId="f8c40a45-ee90-819c-6717-2648ff00657f" testName="MoveDownMidRankSameRung" computerName="ADI" duration="00:00:00.0004191" startTime="2012-11-22T23:47:49.0510723+00:00" endTime="2012-11-22T23:47:49.0550726+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="da4ee848-b8c9-4d15-8fd2-9738fb86170a">
+    </UnitTestResult>
+    <UnitTestResult executionId="0dd34056-132a-4f28-b52e-8deadc0ad08c" testId="bae7745a-4345-aa97-8f60-00319ccaf741" testName="MoveDownMidRankDownARung" computerName="ADI" duration="00:00:00.0002758" startTime="2012-11-22T23:47:49.0590728+00:00" endTime="2012-11-22T23:47:49.0630730+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0dd34056-132a-4f28-b52e-8deadc0ad08c">
+    </UnitTestResult>
+    <UnitTestResult executionId="05167cb1-0a03-4b67-9192-76effc06189d" testId="c49ee672-b73a-bc6c-ef5b-ba89f980a4ad" testName="MoveDownHighRankSameRung" computerName="ADI" duration="00:00:00.0005192" startTime="2012-11-22T23:47:49.0680733+00:00" endTime="2012-11-22T23:47:49.0720735+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="05167cb1-0a03-4b67-9192-76effc06189d">
+    </UnitTestResult>
+    <UnitTestResult executionId="fa5cd38c-8dcf-4dd5-8165-ba888bea08b1" testId="bed63836-32d0-838c-d496-ce4fc91f6c1f" testName="MoveDownHighRankDownARung" computerName="ADI" duration="00:00:00.0002621" startTime="2012-11-22T23:47:49.0760738+00:00" endTime="2012-11-22T23:47:49.0800740+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fa5cd38c-8dcf-4dd5-8165-ba888bea08b1">
+    </UnitTestResult>
+    <UnitTestResult executionId="e3336b1b-1351-47f3-b987-7d4273e200a4" testId="1e309648-fdb7-1ca9-2ccb-3341883b6e78" testName="DontMoveDownWhenAtBottomOfRank" computerName="ADI" duration="00:00:00.0002613" startTime="2012-11-22T23:47:49.0840742+00:00" endTime="2012-11-22T23:47:49.0880744+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e3336b1b-1351-47f3-b987-7d4273e200a4">
+    </UnitTestResult>
+  </Results>
+</TestRun>

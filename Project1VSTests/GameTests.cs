@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Project1;
-using NUnit.Framework;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Project1
 {
-    [TestFixture]
+    [TestClass]
     public class GameTests
     {
-        [Test]
+        [TestMethod]
         public void GetAndSetPlayerIDs()
         {
             Game g = new Game();
 
             g.BlackPlayerID = 10;
-            uint id = g.BlackPlayerID;
+            int id = g.BlackPlayerID;
             Assert.AreEqual(10, id);
 
             g.WhitePlayerID = 11;
@@ -24,17 +24,17 @@ namespace Project1
             Assert.AreEqual(11, id);
         }
 
-        [Test]
+        [TestMethod]
         public void GetAndSetGameIDs()
         {
             Game g = new Game();
 
             g.GameID = 1000;
-            uint id = g.GameID;
+            int id = g.GameID;
             Assert.AreEqual(1000, id);
         }
 
-        [Test]
+        [TestMethod]
         public void GetAndSetResult()
         {
             Game g = new Game();
@@ -44,17 +44,17 @@ namespace Project1
             Assert.AreEqual(eResult.abandoned, result);
         }
 
-        [Test]
+        [TestMethod]
         public void GetAndSetKome()
         {
             Game g = new Game();
 
             g.Kome = 25 ;
-            uint kome = g.Kome;
+            int kome = g.Kome;
             Assert.AreEqual(25, kome);
         }
 
-        [Test]
+        [TestMethod]
         public void GetAndSetGameDetailsThroughConstructor()
         {
             Game g = new Game(155, 13, 6, 7, eResult.whiteWin);

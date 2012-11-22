@@ -65,7 +65,7 @@ namespace Project1
         private void button_OK_Click(object sender, EventArgs e)
         {
             pArg.Name = textBox_AddPlayerName.Text;
-            pArg.rank = (uint)listBox_Ranks.SelectedIndex;
+            pArg.rank = (int)listBox_Ranks.SelectedIndex;
             if (radioButton_RungTop.Checked == true)
                 pArg.rung = 0;
             if (radioButton_RungSecond.Checked == true)
@@ -89,7 +89,7 @@ namespace Project1
     public class PlayerArgs : EventArgs
     {
         public string Name { get; set; }
-        public uint rank { get; set; }
-        public uint rung { get; set; }
+        public int rank { get; set; }
+        public int rung { get; set; }
     }
 }

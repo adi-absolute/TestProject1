@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Project1;
-using NUnit.Framework;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Project1
 {
-    [TestFixture]
+    [TestClass]
     public class LadderTests
     {
-        [Test]
+        [TestMethod]
         public void NumberOfPlayersIsZeroWhenLadderIsCreated()
         {
             Ladder ladder = new Ladder();
@@ -18,23 +18,23 @@ namespace Project1
             Assert.AreEqual(0, ladder.get_NumberOfPlayers());
         }
 
-        [Test]
+        [TestMethod]
         public void AddPlayerToEmptyList()
         {
             Ladder ladder = new Ladder();
 
-            string name = "Test";
+            string name = "TestMethod";
             ladder.AddPlayer(name, eRankNumber.rank10kyu, eRungPosition.rungPositionFirst);
             
             Assert.AreEqual(1, ladder.get_NumberOfPlayers());
         }
 
-        [Test]
+        [TestMethod]
         public void GetPlayerList()
         {
             Ladder ladder = new Ladder();
 
-            string name = "Test";
+            string name = "TestMethod";
             ladder.AddPlayer(name, eRankNumber.rank10kyu, eRungPosition.rungPositionFirst);
 
             List<Player> pList = ladder.get_PlayerList();
@@ -43,26 +43,26 @@ namespace Project1
             Assert.AreEqual(1, numberOfPlayers);
         }
 
-        [Test]
+        [TestMethod]
         public void GetIDofLastPlayerInList()
         {
             Ladder ladder = new Ladder();
 
-            string name = "Test";
+            string name = "TestMethod";
             ladder.AddPlayer(name, eRankNumber.rank10kyu, eRungPosition.rungPositionFirst);
 
             List<Player> pList = ladder.get_PlayerList();
 
-            uint id = pList.ElementAt(0).myID;
+            int id = pList.ElementAt(0).myID;
             Assert.AreEqual(1, id);
         }
 
-        [Test]
+        [TestMethod]
         public void GetNameofLastPlayerInList()
         {
             Ladder ladder = new Ladder();
 
-            string name = "Test";
+            string name = "TestMethod";
             ladder.AddPlayer(name, eRankNumber.rank10kyu, eRungPosition.rungPositionFirst);
 
             List<Player> pList = ladder.get_PlayerList();
@@ -71,63 +71,63 @@ namespace Project1
             Assert.AreEqual(name, listName);
         }
 
-        [Test]
+        [TestMethod]
         public void SuccessfulAdditionOfPlayerReturnsTrue()
         {
             Ladder ladder = new Ladder();
 
-            string name = "Test";
+            string name = "TestMethod";
             bool result = ladder.AddPlayer(name, eRankNumber.rank10kyu, eRungPosition.rungPositionFirst);
 
             Assert.IsTrue(result);
         }
 
-        [Test]
+        [TestMethod]
         public void RemovePlayerDeletesPlayerFromList()
         {
             Ladder ladder = new Ladder();
 
-            string name = "Test";
+            string name = "TestMethod";
             bool result = ladder.AddPlayer(name, eRankNumber.rank10kyu, eRungPosition.rungPositionFirst);
 
             ladder.RemovePlayer(1);
             List<Player> pList = ladder.get_PlayerList();
-            Assert.IsEmpty(pList);
+            Assert.AreEqual(0, pList.Count);
         }
 
-        [Test]
+        [TestMethod]
         public void FindPlayerFromListWithName()
         {
             Ladder ladder = new Ladder();
 
-            string name = "Test";
+            string name = "TestMethod";
             bool result = ladder.AddPlayer(name, eRankNumber.rank10kyu, eRungPosition.rungPositionFirst);
             string partialName = "Tes";
             
             List<Player> pList = ladder.findPlayers(partialName);
             
-            Assert.IsNotEmpty(pList);
+            Assert.IsNotNull(pList);
             string listName = pList.ElementAt(0).myName;
             Assert.AreEqual(name, listName);
         }
 
-        [Test]
+        [TestMethod]
         public void FindPlayerFromListWithRank()
         {
             Ladder ladder = new Ladder();
 
-            string name = "Test";
+            string name = "TestMethod";
             eRankNumber rank = eRankNumber.rank5Dan;
             bool result = ladder.AddPlayer(name, rank, eRungPosition.rungPositionFirst);
             
             List<Player> pList = ladder.findPlayers(rank);
 
-            Assert.IsNotEmpty(pList);
+            Assert.IsNotNull(pList);
             string listName = pList.ElementAt(0).myName;
             Assert.AreEqual(name, listName);
         }
 
-        [Test]
+        [TestMethod]
         public void FindMultiplePlayersFromListWithSameRank()
         {
             Ladder ladder = new Ladder();
@@ -152,7 +152,7 @@ namespace Project1
             Assert.AreEqual(name3, listName);
         }
 
-        [Test]
+        [TestMethod]
         public void DeletingMiddlePlayerInListKeepsOthers()
         {
             Ladder ladder = new Ladder();
@@ -178,7 +178,7 @@ namespace Project1
             Assert.AreEqual(name3, listName);
         }
 
-        [Test]
+        [TestMethod]
         public void DeletingLastPlayerInListAndAddingPlayerAfterwards()
         {
             Ladder ladder = new Ladder();
@@ -207,24 +207,24 @@ namespace Project1
             Assert.AreEqual(name4, listName);
         }
 
-        [Test]
+        [TestMethod]
         public void NewLadderHasNoGames()
         {
             Ladder ladder = new Ladder();
 
-            uint nGames = ladder.get_NumberOfGames();
+            int nGames = ladder.get_NumberOfGames();
 
             Assert.AreEqual(0, nGames);
         }
 
-        [Test]
+        [TestMethod]
         public void AddingGamesIncreasesTheCounter()
         {
             Ladder ladder = new Ladder();
 
             Game g = new Game();
             ladder.AddGame(g);
-            uint nGames = ladder.get_NumberOfGames();
+            int nGames = ladder.get_NumberOfGames();
             Assert.AreEqual(1, nGames);
 
             ladder.AddGame(g);
@@ -232,14 +232,14 @@ namespace Project1
             Assert.AreEqual(2, nGames);
         }
 
-        [Test]
+        [TestMethod]
         public void AddingGamesAutomaticallyAddsGameID()
         {
             Ladder ladder = new Ladder();
 
             Game g = new Game(0, 5, 3, 2, eResult.whiteWin);
             ladder.AddGame(g);
-            uint nGames = ladder.get_NumberOfGames();
+            int nGames = ladder.get_NumberOfGames();
             Assert.AreEqual(1, nGames);
 
             Game g2 = ladder.get_Game(1);

@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Project1;
-using NUnit.Framework;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Project1
 {
-    [TestFixture]
+    [TestClass]
     public class RankTests
     {
-        [Test]
+        [TestMethod]
         public void SetAndGetRankNumber()
         {
             Rank r = new Rank();
@@ -21,7 +21,7 @@ namespace Project1
             Assert.AreEqual(eRankNumber.rank11kyu, getRank);
         }
 
-        [Test]
+        [TestMethod]
         public void SetAndGetRungPosition()
         {
             Rank r = new Rank();
@@ -32,7 +32,7 @@ namespace Project1
             Assert.AreEqual(eRungPosition.rungPositionSecond, getRung);
         }
 
-        [Test]
+        [TestMethod]
         public void DefaultRankAndRungPositionForNoRank()
         {
             Rank r = new Rank();
@@ -44,7 +44,7 @@ namespace Project1
             Assert.AreEqual(eRungPosition.rungPositionFirst, getRung);
         }
 
-        [Test]
+        [TestMethod]
         public void SetRankThroughConstructor()
         {
             Rank r = new Rank(eRankNumber.rank4Dan);
@@ -56,7 +56,7 @@ namespace Project1
             Assert.AreEqual(eRungPosition.rungPositionFirst, getRung);
         }
 
-        [Test]
+        [TestMethod]
         public void SetRankAndRungThroughConstructor()
         {
             Rank r = new Rank(eRankNumber.rank1Dan, eRungPosition.rungPositionTop);
@@ -68,7 +68,7 @@ namespace Project1
             Assert.AreEqual(eRungPosition.rungPositionTop, getRung);
         }
 
-        [Test]
+        [TestMethod]
         public void MoveUpLadderLowRankSameRung()
         {
             Rank r = new Rank(eRankNumber.rank30kyu, eRungPosition.rungPositionFirst);
@@ -82,7 +82,7 @@ namespace Project1
             Assert.AreEqual(eRungPosition.rungPositionTop, getRung);
         }
 
-        [Test]
+        [TestMethod]
         public void MoveUpLadderLowRankUpARung()
         {
             Rank r = new Rank(eRankNumber.rank25kyu, eRungPosition.rungPositionTop);
@@ -96,7 +96,7 @@ namespace Project1
             Assert.AreEqual(eRungPosition.rungPositionFirst, getRung);
         }
 
-        [Test]
+        [TestMethod]
         public void MoveUpLadderMiddleRankUpARung()
         {
             Rank r = new Rank(eRankNumber.rank19kyu, eRungPosition.rungPositionTop);
@@ -110,7 +110,7 @@ namespace Project1
             Assert.AreEqual(eRungPosition.rungPositionSecond, getRung);
         }
 
-        [Test]
+        [TestMethod]
         public void MoveUpLadderMiddleRankSameRung()
         {
             Rank r = new Rank(eRankNumber.rank19kyu, eRungPosition.rungPositionSecond);
@@ -133,7 +133,7 @@ namespace Project1
             Assert.AreEqual(eRungPosition.rungPositionTop, getRung);
         }
 
-        [Test]
+        [TestMethod]
         public void MoveUpLadderHighRankUpARung()
         {
             Rank r = new Rank(eRankNumber.rank1kyu, eRungPosition.rungPositionTop);
@@ -147,7 +147,7 @@ namespace Project1
             Assert.AreEqual(eRungPosition.rungPositionThird, getRung);
         }
 
-        [Test]
+        [TestMethod]
         public void MoveUpLadderHighRankSameRung()
         {
             Rank r = new Rank(eRankNumber.rank4Dan, eRungPosition.rungPositionThird);
@@ -179,7 +179,7 @@ namespace Project1
             Assert.AreEqual(eRungPosition.rungPositionTop, getRung);
         }
 
-        [Test]
+        [TestMethod]
         public void DontMoveUpLadderMaxRankAndRung()
         {
             Rank r = new Rank(eRankNumber.rank9Dan, eRungPosition.rungPositionTop);
@@ -199,7 +199,7 @@ namespace Project1
 
 
 
-        [Test]
+        [TestMethod]
         public void MoveDownLowRankSameRung()
         {
             Rank r = new Rank(eRankNumber.rank30kyu, eRungPosition.rungPositionTop);
@@ -213,7 +213,7 @@ namespace Project1
             Assert.AreEqual(eRungPosition.rungPositionFirst, getRung);
         }
 
-        [Test]
+        [TestMethod]
         public void MoveDownLowRankDownARung()
         {
             Rank r = new Rank(eRankNumber.rank30kyu, eRungPosition.rungPositionFirst);
@@ -227,7 +227,7 @@ namespace Project1
             Assert.AreEqual(eRungPosition.rungPositionTop, getRung);
         }
 
-        [Test]
+        [TestMethod]
         public void MoveDownMidRankSameRung()
         {
             Rank r = new Rank(eRankNumber.rank10kyu, eRungPosition.rungPositionTop);
@@ -250,7 +250,7 @@ namespace Project1
             Assert.AreEqual(eRungPosition.rungPositionSecond, getRung);
         }
 
-        [Test]
+        [TestMethod]
         public void MoveDownMidRankDownARung()
         {
             Rank r = new Rank(eRankNumber.rank30kyu, eRungPosition.rungPositionFirst);
@@ -264,7 +264,7 @@ namespace Project1
             Assert.AreEqual(eRungPosition.rungPositionTop, getRung);
         }
 
-        [Test]
+        [TestMethod]
         public void MoveDownHighRankSameRung()
         {
             Rank r = new Rank(eRankNumber.rank1Dan, eRungPosition.rungPositionTop);
@@ -296,7 +296,7 @@ namespace Project1
             Assert.AreEqual(eRungPosition.rungPositionThird, getRung);
         }
 
-        [Test]
+        [TestMethod]
         public void MoveDownHighRankDownARung()
         {
             Rank r = new Rank(eRankNumber.rank1Dan, eRungPosition.rungPositionThird);
@@ -310,7 +310,7 @@ namespace Project1
             Assert.AreEqual(eRungPosition.rungPositionTop, getRung);
         }
 
-        [Test]
+        [TestMethod]
         public void DontMoveDownWhenAtBottomOfRank()
         {
             Rank r = new Rank(eRankNumber.rank36kyu, eRungPosition.rungPositionFirst);
