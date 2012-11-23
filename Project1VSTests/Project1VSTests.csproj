@@ -45,13 +45,13 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FileMangerTests.cs" />
     <Compile Include="GameTests.cs" />
     <Compile Include="IAddGameTests.cs" />
     <Compile Include="LadderTests.cs" />
     <Compile Include="PlayerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RankTests.cs" />
-    <Compile Include="UnitTest1.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TestProject1\Project1.csproj">
