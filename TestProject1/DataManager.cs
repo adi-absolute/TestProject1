@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
+using System.Runtime.Serialization;
+using System.Xml.Serialization;
+using System.Xml;
 
 namespace Project1
 {
@@ -25,6 +28,15 @@ namespace Project1
                 else
                     fileName = value + fileExtension;
             }
+        }
+
+        public void Save(Ladder ladder)
+        {
+            DataContractSerializer d = new DataContractSerializer(ladder.GetType());
+            FileStream writer = new FileStream(fileName, FileMode.Create);
+
+            d.WriteObject(writer, ladder);
+            writer.Close();
         }
     }
 }

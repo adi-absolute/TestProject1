@@ -66,9 +66,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataManager.cs" />
-    <Compile Include="FileManager.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="IAddPlayer.cs">
       <SubType>Form</SubType>
     </Compile>

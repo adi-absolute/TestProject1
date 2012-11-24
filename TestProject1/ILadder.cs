@@ -8,7 +8,6 @@ using System.Text;
 using System.IO;
 using System.Windows.Forms;
 using System.Runtime.Serialization;
-//using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml.Serialization;
 using System.Xml;
 
