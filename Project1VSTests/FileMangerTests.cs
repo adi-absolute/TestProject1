@@ -15,7 +15,7 @@ namespace Project1
         public void SetAndGetName()
         {
             FileManager fm = new FileManager();
-            string fName = "sdrfs";
+            string fName = "sdrfs.gls";
             fm.name = fName;
             string result = fm.name;
 
@@ -23,45 +23,70 @@ namespace Project1
         }
         
         [TestMethod]
-        public void SetAndGetNameWithExtension()
+        public void SetAndGetNameWithoutExtension()
         {
             FileManager fm = new FileManager();
             string fName = "sdrfs";
-            string fExt = ".gop";
-            string a = fName + fExt;
+            string fExt = FileManager.fileExtension;
+            string a = fName;// +fExt;
             fm.name = a;
 
             string result = fm.name;
 
-            Assert.AreEqual(fName, result);
+            Assert.AreEqual(fName + fExt, result);
         }
 
-        [TestMethod, Ignore]
-        public void Rename()
+        [TestMethod]
+        public void EmptyLadderSetsAtLeastThePlayerAndGameHeaders()
         {
             Ladder ladder = new Ladder();
             FileManager f = new FileManager();
-            string fName = "filename.gop";
+            f.name = "filename.gls";
 
+            f.Save(ladder);
+
+            string[] expectedFile = 
+            {
+                "$Player",
+                "$Game"
+            };
+
+            string[] actualFile = File.ReadAllLines(f.name);
+            bool result = actualFile[0].Equals(expectedFile[0]);
+            Assert.AreEqual(true, result);
+            result = actualFile[1].Equals(expectedFile[1]);
+            Assert.AreEqual(true, result);
+        }
+
+        [TestMethod]
+        public void SaveLadderToFileWithPlayerNames()
+        {
+            Ladder ladder = new Ladder();
+            FileManager f = new FileManager();
+            f.name = "filename.gls";
+            
             ladder.AddPlayer("First", eRankNumber.rank10kyu, eRungPosition.rungPositionFirst);
 
-            f.Save(fName, ladder);
+            f.Save(ladder);
 
-            FileStream fs = File.OpenRead(fName);
-            TextReader tr = new StreamReader(fs);
+            string[] expectedFile = 
+            {
+                "$Player",
+                "First",
+                eRankNumber.rank10kyu.ToString(),
+                eRungPosition.rungPositionFirst.ToString(),
+                "$Game"
+            };
+
+            string[] actualFile = File.ReadAllLines(f.name);
             
-            //char c = (char)tr.Read();
-            char[] buf = new char[100];
-            
-            tr.Read(buf, 0, 100);
-            string b = new string(buf);
+            for (int i = 0; i < expectedFile.Length; i++)
+            {
+                bool result = actualFile[i].Equals(expectedFile[i]);
+                Assert.AreEqual(true, result);
+            }
 
-            string e = "%%" + fName +
-                "%" + (char)eRankNumber.rank10kyu +
-                "%" + (char)eRungPosition.rungPositionFirst;
-
-            bool result = b.Equals(e);
-            Assert.AreEqual(true, result);
+            //Assert.AreEqual(expectedFile, actualFile);
             
         }
     }

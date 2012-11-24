@@ -19,3 +19,4 @@ Debug
 Objects
 TestResults
 TestResults/*.trx
+/TestResults
