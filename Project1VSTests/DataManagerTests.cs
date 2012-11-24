@@ -68,5 +68,42 @@ namespace Project1
 
             Assert.AreEqual(1, readLadder.get_NumberOfPlayers());
         }
+
+        [TestMethod]
+        public void TryingToLoadFileThatDoesNotExistReturnsFalse()
+        {
+            DataManager dm = new DataManager();
+
+            Ladder readLadder = new Ladder();
+
+            bool result = dm.Load("Unknown.gls", out readLadder);
+
+            Assert.AreEqual(false, result);
+        }
+
+        [TestMethod]
+        public void LoadFileFromDisk()
+        {
+            DataManager dm = new DataManager();
+            string fName = "LoadFileFromDisk.gls";
+
+            Ladder savedLadder = new Ladder();
+            savedLadder.AddPlayer("First",
+                eRankNumber.rank12kyu,
+                eRungPosition.rungPositionSecond);
+            savedLadder.AddPlayer("Second",
+                eRankNumber.rank13kyu,
+                eRungPosition.rungPositionThird);
+
+            dm.name = fName;
+            dm.Save(savedLadder);
+
+            Ladder readLadder = new Ladder();
+
+            bool result = dm.Load(fName, out readLadder);
+
+            Assert.AreEqual(true, result);
+            Assert.AreEqual(2, readLadder.get_NumberOfPlayers());
+        }
     }
 }

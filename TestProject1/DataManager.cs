@@ -12,8 +12,6 @@ namespace Project1
     public class DataManager
     {
         public const string fileExtension = ".gls";
-        public const string playerSeparator = "$Player";
-        public const string gameSeparator = "$Game";
         private string fileName;
         public string name
         {
@@ -37,6 +35,24 @@ namespace Project1
 
             d.WriteObject(writer, ladder);
             writer.Close();
+        }
+
+        public bool Load(string name, out Ladder ladder)
+        {
+            bool fileExists = File.Exists(name);
+            ladder = null;
+
+            if (fileExists)
+            {
+                FileStream fs = new FileStream(name, FileMode.Open);
+                XmlDictionaryReader reader =
+                    XmlDictionaryReader.CreateTextReader(fs, new XmlDictionaryReaderQuotas());
+                DataContractSerializer ser = new DataContractSerializer(typeof(Ladder));
+
+                ladder = (Ladder)ser.ReadObject(reader, true);
+            }
+
+            return fileExists;
         }
     }
 }
