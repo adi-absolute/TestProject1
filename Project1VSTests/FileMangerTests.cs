@@ -142,8 +142,6 @@ namespace Project1
             Assert.AreEqual(f.name, f2.name);
         }
 
-
-
         [TestMethod]
         public void LoadingLadderDoesNotSaveNameIfFileDoesNotExist()
         {
@@ -198,7 +196,5 @@ namespace Project1
             List<Player> pList = l2.get_PlayerList();
             Assert.AreEqual("First", pList[0].myName);
         }
-
-        
     }
 }

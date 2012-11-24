@@ -2,14 +2,20 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Runtime.Serialization;
 
 namespace Project1
 {
-    public class Ladder
+    [DataContract(Name = "Ladder", Namespace = "Project1")]
+    public class Ladder : IExtensibleDataObject
     {
+        [DataMember()]
         int myLastPlayerID;
+        [DataMember()]
         int myLastGameID;
+        [DataMember()]
         List<Player> myPlayerList = new List<Player>();
+        [DataMember()]
         List<Game> myGameList = new List<Game>();
 
         public int get_NumberOfPlayers()
@@ -70,6 +76,22 @@ namespace Project1
             Game game = myGameList.Find(g => id == g.GameID);
             
             return game;
+        }
+
+        /*For Serialising*/
+
+        private ExtensionDataObject extensionData_Value;
+
+        public ExtensionDataObject ExtensionData
+        {
+            get
+            {
+                return extensionData_Value;
+            }
+            set
+            {
+                extensionData_Value = value;
+            }
         }
     }
 }

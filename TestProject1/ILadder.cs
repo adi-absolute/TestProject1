@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.IO;
 using System.Windows.Forms;
+using System.Runtime.Serialization;
+//using System.Runtime.Serialization.Formatters.Binary;
+using System.Xml.Serialization;
+using System.Xml;
 
 namespace Project1
 {
@@ -54,19 +58,14 @@ namespace Project1
             eRankNumber rank = (eRankNumber)e.rank;
             eRungPosition rung = (eRungPosition)e.rung;
             ladder.AddPlayer(name, rank, rung);
-            //MessageBox.Show("Player Successfully Added");
             PopulatePlayerListBox();
 
-            File.AppendAllText("test.gop", name);
             /*
-            //string informationToWrite = "Hello2 persistent file storage world!";
-            File.("test1.txt", ladder); // Change the file path here to where you want it.
+            DataContractSerializer d = new DataContractSerializer(ladder.GetType());
+            FileStream writer = new FileStream("dcsFile.gls", FileMode.Create);
             
-            string[] arrayOfInformation = new string[2];
-            arrayOfInformation[0] = "This is line 1";
-            arrayOfInformation[1] = "This is line 2";
-            File.AppendAllLines("test2.txt", arrayOfInformation);
-            //throw new NotImplementedException();
+            d.WriteObject(writer, ladder);
+            writer.Close();
             */
         }
 
