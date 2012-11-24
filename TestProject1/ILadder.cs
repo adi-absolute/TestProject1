@@ -12,7 +12,7 @@ namespace Project1
 {
     public partial class ILadder : Form
     {
-        string[] rankMap = 
+        public static string[] rankMap = 
         {   "9 dan", "8 dan", "7 dan", "6 dan", "5 dan", "4 dan",
             "3 dan", "2 dan", "1 dan", "1 kyu", "2 kyu", "3 kyu",
             "4 kyu", "5 kyu", "6 kyu", "7 kyu", "8 kyu", "9 kyu",
@@ -21,6 +21,11 @@ namespace Project1
             "22 kyu", "23 kyu", "24 kyu", "25 kyu", "26 kyu", "27 kyu",
             "28 kyu", "29 kyu", "30 kyu", "31 kyu", "32 kyu", "33 kyu",
             "34 kyu", "35 kyu", "36 kyu",  
+        };
+
+        public static string[] rungMap = 
+        {
+            "Top Rung", "Second Rung", "Third Rung", "Fourth Rung"
         };
 
         public Ladder ladder = new Ladder();

@@ -9,19 +9,21 @@ namespace Project1
     public class FileManager
     {
         public const string fileExtension = ".gls";
-        private string sName;
+        public const string playerSeparator = "$Player";
+        public const string gameSeparator = "$Game";
+        private string fileName;
         public string name
         {
             get
             {
-                return sName;
+                return fileName;
             }
             set
             {
                 if (value.Contains(fileExtension))
-                    sName = value;
+                    fileName = value;
                 else
-                    sName = value + fileExtension;
+                    fileName = value + fileExtension;
             }
         }
 
@@ -29,21 +31,48 @@ namespace Project1
         {
             List<Player> list = ladder.get_PlayerList();
 
-            File.WriteAllText(sName, "$Player");
+            File.WriteAllText(fileName, playerSeparator);
 
             for (int i = 0; i < list.Count; i++)
             {
-                File.AppendAllText(sName, Environment.NewLine);
-                File.AppendAllText(sName, list[i].myName);
-                File.AppendAllText(sName, Environment.NewLine);
-                File.AppendAllText(sName, list[i].GetRankNumber().ToString());
-                File.AppendAllText(sName, Environment.NewLine);
-                File.AppendAllText(sName, list[i].GetRungPosition().ToString());
+                File.AppendAllText(fileName, Environment.NewLine);
+                File.AppendAllText(fileName, list[i].myName);
+                File.AppendAllText(fileName, Environment.NewLine);
+                File.AppendAllText(fileName, ILadder.rankMap[(int)list[i].GetRankNumber()]);
+                File.AppendAllText(fileName, Environment.NewLine);
+                File.AppendAllText(fileName, ILadder.rankMap[(int)list[i].GetRungPosition()]);
             }
 
-            File.AppendAllText(sName, Environment.NewLine);
-            File.AppendAllText(sName, "$Game");
+            File.AppendAllText(fileName, Environment.NewLine);
+            File.AppendAllText(fileName, gameSeparator);
+        }
 
+        public Ladder Load(string fName)
+        {
+            if (File.Exists(fName) == false)
+                return null;
+
+            bool integrity = true;
+            int counter = 0;
+            Ladder l = new Ladder();
+
+            fileName = fName;
+
+            string[] readLine = File.ReadAllLines(fName);
+
+            if (readLine[counter++] != playerSeparator)
+                integrity = false;
+
+            bool stayInLoop = true;
+            while (integrity && stayInLoop)
+            {
+                string pName = readLine[counter++];
+                //eRankNumber rank = (eRankNumber)readLine[counter++];
+            }
+
+            
+
+            return l;
         }
     }
 }

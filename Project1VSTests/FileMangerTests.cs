@@ -47,8 +47,8 @@ namespace Project1
 
             string[] expectedFile = 
             {
-                "$Player",
-                "$Game"
+                FileManager.playerSeparator,
+                FileManager.gameSeparator
             };
 
             string[] actualFile = File.ReadAllLines(f.name);
@@ -59,7 +59,7 @@ namespace Project1
         }
 
         [TestMethod]
-        public void SaveLadderToFileWithPlayerNames()
+        public void SaveLadderToFileWithOnePlayerName()
         {
             Ladder ladder = new Ladder();
             FileManager f = new FileManager();
@@ -71,11 +71,11 @@ namespace Project1
 
             string[] expectedFile = 
             {
-                "$Player",
+                FileManager.playerSeparator,
                 "First",
-                eRankNumber.rank10kyu.ToString(),
-                eRungPosition.rungPositionFirst.ToString(),
-                "$Game"
+                ILadder.rankMap[(int)eRankNumber.rank10kyu],
+                ILadder.rungMap[(int)eRungPosition.rungPositionFirst],
+                FileManager.gameSeparator
             };
 
             string[] actualFile = File.ReadAllLines(f.name);
@@ -85,9 +85,95 @@ namespace Project1
                 bool result = actualFile[i].Equals(expectedFile[i]);
                 Assert.AreEqual(true, result);
             }
+        }
 
-            //Assert.AreEqual(expectedFile, actualFile);
+        [TestMethod]
+        public void SaveLadderToFileWithMultiplePlayerNames()
+        {
+            Ladder ladder = new Ladder();
+            FileManager f = new FileManager();
+            f.name = "filename.gls";
+
+            ladder.AddPlayer("First", eRankNumber.rank10kyu, eRungPosition.rungPositionFirst);
+            ladder.AddPlayer("Second", eRankNumber.rank1kyu, eRungPosition.rungPositionSecond);
+            ladder.AddPlayer("Third", eRankNumber.rank1Dan, eRungPosition.rungPositionThird);
+
+            f.Save(ladder);
+
+            string[] expectedFile = 
+            {
+                FileManager.playerSeparator,
+                "First",
+                ILadder.rankMap[(int)eRankNumber.rank10kyu],
+                ILadder.rungMap[(int)eRungPosition.rungPositionFirst],
+                "Second",
+                ILadder.rankMap[(int)eRankNumber.rank1kyu],
+                ILadder.rungMap[(int)eRungPosition.rungPositionSecond],
+                "Third",
+                ILadder.rankMap[(int)eRankNumber.rank1Dan],
+                ILadder.rungMap[(int)eRungPosition.rungPositionThird],
+                FileManager.gameSeparator
+            };
+
+            string[] actualFile = File.ReadAllLines(f.name);
+
+            for (int i = 0; i < expectedFile.Length; i++)
+            {
+                bool result = actualFile[i].Equals(expectedFile[i]);
+                Assert.AreEqual(true, result);
+            }
+        }
+
+        [TestMethod]
+        public void LoadingLadderSavesNameIfFileExists()
+        {
+            Ladder ladder = new Ladder();
+            FileManager f = new FileManager();
+            f.name = "filename.gls";
+
+            ladder.AddPlayer("First", eRankNumber.rank10kyu, eRungPosition.rungPositionFirst);
+
+            f.Save(ladder);
+
+            FileManager f2 = new FileManager();
+            Ladder l2 = f2.Load(f.name);
+
+            Assert.AreEqual(f.name, f2.name);
+        }
+
+
+
+        [TestMethod]
+        public void LoadingLadderDoesNotSaveNameIfFileDoesNotExist()
+        {
+            FileManager f = new FileManager();
+            string fName = "filename_dne.gls";
+
+            Ladder ladder = f.Load(fName);
+
+            Assert.AreEqual(null, f.name);
+            Assert.AreEqual(null, ladder);
+        }
+
+        [TestMethod]
+        public void LoadSavedFileToLadder()
+        {
+            Ladder ladder = new Ladder();
+            FileManager f = new FileManager();
+            string fName = "filename_load1.gls";
+            f.name = fName;
+
+            ladder.AddPlayer("First", eRankNumber.rank10kyu, eRungPosition.rungPositionFirst);
+
+            f.Save(ladder);
+
+            FileManager f2 = new FileManager();
+            Ladder l2 = f2.Load(fName);
+
+            Assert.AreEqual(1, l2.get_NumberOfPlayers());
             
+            List<Player> pList = l2.get_PlayerList();
+            Assert.AreEqual("First", pList[0].myName);
         }
     }
 }

@@ -1,10 +1,10 @@
+C:\Personal\Go\TestProject1\TestProject1\bin\Debug\TestProject1.exe
+C:\Personal\Go\TestProject1\TestProject1\bin\Debug\TestProject1.pdb
 C:\Personal\Go\TestProject1\TestProject1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Personal\Go\TestProject1\TestProject1\obj\x86\Debug\Project1.IAddPlayer.resources
+C:\Personal\Go\TestProject1\TestProject1\obj\x86\Debug\Project1.ILadder.resources
 C:\Personal\Go\TestProject1\TestProject1\obj\x86\Debug\Project1.Properties.Resources.resources
 C:\Personal\Go\TestProject1\TestProject1\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Personal\Go\TestProject1\TestProject1\obj\x86\Debug\GenerateResource.write.1.tlog
-C:\Personal\Go\TestProject1\TestProject1\bin\Debug\TestProject1.pdb
-C:\Personal\Go\TestProject1\TestProject1\obj\x86\Debug\TestProject1.pdb
-C:\Personal\Go\TestProject1\TestProject1\bin\Debug\TestProject1.exe
 C:\Personal\Go\TestProject1\TestProject1\obj\x86\Debug\TestProject1.exe
-C:\Personal\Go\TestProject1\TestProject1\obj\x86\Debug\Project1.ILadder.resources
-C:\Personal\Go\TestProject1\TestProject1\obj\x86\Debug\Project1.IAddPlayer.resources
+C:\Personal\Go\TestProject1\TestProject1\obj\x86\Debug\TestProject1.pdb
