@@ -40,7 +40,7 @@ namespace Project1
                 File.AppendAllText(fileName, Environment.NewLine);
                 File.AppendAllText(fileName, ILadder.rankMap[(int)list[i].GetRankNumber()]);
                 File.AppendAllText(fileName, Environment.NewLine);
-                File.AppendAllText(fileName, ILadder.rankMap[(int)list[i].GetRungPosition()]);
+                File.AppendAllText(fileName, ILadder.rungMap[(int)list[i].GetRungPosition()]);
             }
 
             File.AppendAllText(fileName, Environment.NewLine);
@@ -54,25 +54,44 @@ namespace Project1
 
             bool integrity = true;
             int counter = 0;
-            Ladder l = new Ladder();
+            Ladder localLadder = null;
 
             fileName = fName;
-
+            
             string[] readLine = File.ReadAllLines(fName);
 
             if (readLine[counter++] != playerSeparator)
                 integrity = false;
 
-            bool stayInLoop = true;
-            while (integrity && stayInLoop)
+            bool gsFound = false;
+            while (!gsFound && (counter < readLine.Length))
             {
-                string pName = readLine[counter++];
-                //eRankNumber rank = (eRankNumber)readLine[counter++];
+                if (readLine[counter] == gameSeparator)
+                    gsFound = true;
+                else
+                    counter++;
             }
 
-            
+            if ((gsFound == false) || ((counter - 1) % 3 != 0))
+                integrity = false;
+            else
+            {
+                int i = 1;
+                localLadder = new Ladder();
+                while (i < counter)
+                {
+                    string pName = readLine[i++];
+                    int rankInt = Array.IndexOf(ILadder.rankMap, readLine[i++]);
+                    int rungInt = Array.IndexOf(ILadder.rungMap, readLine[i++]);
 
-            return l;
+                    localLadder.AddPlayer(pName, (eRankNumber)rankInt, (eRungPosition)rungInt);
+                }
+            }
+
+            if (integrity == false)
+                localLadder = null;
+                
+            return localLadder;
         }
     }
 }

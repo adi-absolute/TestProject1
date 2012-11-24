@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Project1;
 using System.IO;
+using System.Windows.Forms;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Project1
@@ -153,6 +154,26 @@ namespace Project1
 
             Assert.AreEqual(null, f.name);
             Assert.AreEqual(null, ladder);
+        }
+
+        [TestMethod]
+        public void IncompleteFileReturnsNull()
+        {
+            FileManager f = new FileManager();
+            string fName = "filename_load1.gls";
+
+            string[] savedText =                 
+            {
+                FileManager.playerSeparator,
+                "First",
+            };
+
+            File.WriteAllLines(fName, savedText);
+
+            Ladder ladder = f.Load(fName);
+
+            Assert.AreEqual(null, ladder);
+            
         }
 
         [TestMethod]
