@@ -91,14 +91,13 @@
             // 
             // newLadderToolStripMenuItem
             // 
-            this.newLadderToolStripMenuItem.Enabled = false;
             this.newLadderToolStripMenuItem.Name = "newLadderToolStripMenuItem";
             this.newLadderToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.newLadderToolStripMenuItem.Text = "New Ladder";
+            this.newLadderToolStripMenuItem.Click += new System.EventHandler(this.newLadderToolStripMenuItem_Click);
             // 
             // loadLadderToolStripMenuItem
             // 
-            this.loadLadderToolStripMenuItem.Enabled = false;
             this.loadLadderToolStripMenuItem.Name = "loadLadderToolStripMenuItem";
             this.loadLadderToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.loadLadderToolStripMenuItem.Text = "Load Ladder";

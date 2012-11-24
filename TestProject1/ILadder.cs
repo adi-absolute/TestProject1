@@ -25,17 +25,21 @@ namespace Project1
             "28 kyu", "29 kyu", "30 kyu", "31 kyu", "32 kyu", "33 kyu",
             "34 kyu", "35 kyu", "36 kyu",  
         };
-
         public static string[] rungMap = 
         {
             "Top Rung", "Second Rung", "Third Rung", "Fourth Rung"
         };
+        public Ladder ladder;
 
-        public Ladder ladder = new Ladder();
-
+        bool loaded;
+        
+        
         public ILadder()
         {
-            InitializeComponent();            
+            InitializeComponent();
+            loaded = false;
+            button_AddPlayer.Enabled = false;
+            button_AddGame.Enabled = false;
         }
 
         private void button_AddGame_Click(object sender, EventArgs e)
@@ -59,13 +63,8 @@ namespace Project1
             ladder.AddPlayer(name, rank, rung);
             PopulatePlayerListBox();
 
-            /*
-            DataContractSerializer d = new DataContractSerializer(ladder.GetType());
-            FileStream writer = new FileStream("dcsFile.gls", FileMode.Create);
-            
-            d.WriteObject(writer, ladder);
-            writer.Close();
-            */
+            button_AddGame.Enabled = (ladder.get_NumberOfPlayers() >= 2);
+                
         }
 
         void PopulatePlayerListBox()
@@ -86,6 +85,13 @@ namespace Project1
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {            
             this.Close();
+        }
+
+        private void newLadderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ladder = new Ladder();
+            button_AddPlayer.Enabled = true;
+
         }
     }
 
