@@ -37,6 +37,7 @@
             this.loadLadderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveLadderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -108,6 +109,7 @@
             this.saveLadderToolStripMenuItem.Name = "saveLadderToolStripMenuItem";
             this.saveLadderToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveLadderToolStripMenuItem.Text = "Save Ladder";
+            this.saveLadderToolStripMenuItem.Click += new System.EventHandler(this.saveLadderToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -115,6 +117,15 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.CheckFileExists = true;
+            this.saveFileDialog1.DefaultExt = "gls";
+            this.saveFileDialog1.Filter = "Go Ladder Software Files (*.gls)|*.gls";
+            this.saveFileDialog1.RestoreDirectory = true;
+            this.saveFileDialog1.ValidateNames = false;
+            this.saveFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
             // 
             // ILadder
             // 
@@ -146,6 +157,7 @@
         private System.Windows.Forms.ToolStripMenuItem loadLadderToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveLadderToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
 
     }
 }

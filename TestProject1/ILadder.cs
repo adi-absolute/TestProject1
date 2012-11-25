@@ -32,7 +32,8 @@ namespace Project1
         public Ladder ladder;
 
         bool loaded;
-        
+        string titleText = "Go Ladder Tracker";
+        DataManager dataMngr = new DataManager();
         
         public ILadder()
         {
@@ -40,6 +41,7 @@ namespace Project1
             loaded = false;
             button_AddPlayer.Enabled = false;
             button_AddGame.Enabled = false;
+            this.Text = titleText;
         }
 
         private void button_AddGame_Click(object sender, EventArgs e)
@@ -91,7 +93,27 @@ namespace Project1
         {
             ladder = new Ladder();
             button_AddPlayer.Enabled = true;
+            saveLadderToolStripMenuItem.Enabled = true;
 
+        }
+
+        private void saveLadderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!loaded)
+            {
+                DialogResult res = saveFileDialog1.ShowDialog();
+                if (res != DialogResult.Cancel)
+                    loaded = true;
+            }
+
+            if (loaded == true)
+                dataMngr.Save(ladder);
+            
+        }
+
+        private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+            dataMngr.name = saveFileDialog1.FileName;
         }
     }
 
