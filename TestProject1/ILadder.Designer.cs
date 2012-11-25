@@ -126,6 +126,7 @@
             this.saveFileDialog1.RestoreDirectory = true;
             this.saveFileDialog1.ValidateNames = false;
             this.saveFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
+            this.saveFileDialog1.InitialDirectory = System.Environment.CurrentDirectory;
             // 
             // ILadder
             // 

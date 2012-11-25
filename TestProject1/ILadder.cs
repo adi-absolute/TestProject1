@@ -107,7 +107,10 @@ namespace Project1
             }
 
             if (loaded == true)
+            {
                 dataMngr.Save(ladder);
+                this.Text = dataMngr.name + " - " + titleText;
+            }
             
         }
 
