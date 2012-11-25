@@ -36,14 +36,16 @@
             this.newLadderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadLadderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveLadderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button_AddGame
             // 
-            this.button_AddGame.Location = new System.Drawing.Point(45, 24);
+            this.button_AddGame.Location = new System.Drawing.Point(43, 27);
             this.button_AddGame.Name = "button_AddGame";
             this.button_AddGame.Size = new System.Drawing.Size(75, 23);
             this.button_AddGame.TabIndex = 0;
@@ -53,7 +55,7 @@
             // 
             // button_AddPlayer
             // 
-            this.button_AddPlayer.Location = new System.Drawing.Point(309, 24);
+            this.button_AddPlayer.Location = new System.Drawing.Point(314, 27);
             this.button_AddPlayer.Name = "button_AddPlayer";
             this.button_AddPlayer.Size = new System.Drawing.Size(75, 23);
             this.button_AddPlayer.TabIndex = 1;
@@ -71,6 +73,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -85,6 +88,7 @@
             this.newLadderToolStripMenuItem,
             this.loadLadderToolStripMenuItem,
             this.saveLadderToolStripMenuItem,
+            this.toolStripSeparator1,
             this.exitToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
@@ -93,28 +97,34 @@
             // newLadderToolStripMenuItem
             // 
             this.newLadderToolStripMenuItem.Name = "newLadderToolStripMenuItem";
-            this.newLadderToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newLadderToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.newLadderToolStripMenuItem.Text = "New Ladder";
             this.newLadderToolStripMenuItem.Click += new System.EventHandler(this.newLadderToolStripMenuItem_Click);
             // 
             // loadLadderToolStripMenuItem
             // 
             this.loadLadderToolStripMenuItem.Name = "loadLadderToolStripMenuItem";
-            this.loadLadderToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.loadLadderToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.loadLadderToolStripMenuItem.Text = "Load Ladder";
+            this.loadLadderToolStripMenuItem.Click += new System.EventHandler(this.loadLadderToolStripMenuItem_Click);
             // 
             // saveLadderToolStripMenuItem
             // 
             this.saveLadderToolStripMenuItem.Enabled = false;
             this.saveLadderToolStripMenuItem.Name = "saveLadderToolStripMenuItem";
-            this.saveLadderToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveLadderToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.saveLadderToolStripMenuItem.Text = "Save Ladder";
             this.saveLadderToolStripMenuItem.Click += new System.EventHandler(this.saveLadderToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(136, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -126,7 +136,14 @@
             this.saveFileDialog1.RestoreDirectory = true;
             this.saveFileDialog1.ValidateNames = false;
             this.saveFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
-            this.saveFileDialog1.InitialDirectory = System.Environment.CurrentDirectory;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.DefaultExt = "gls";
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "Go Ladder Software Files (*.gls)|*.gls";
+            this.openFileDialog1.RestoreDirectory = true;
+            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // ILadder
             // 
@@ -159,6 +176,8 @@
         private System.Windows.Forms.ToolStripMenuItem saveLadderToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
 
     }
 }
