@@ -10,7 +10,7 @@ namespace Project1
     {
         public string myName { get; set; }
         public int myID { get; set; }
-        Rank myRank = new Rank();
+        public Rank myRank = new Rank();
 
         public Player()
         {
