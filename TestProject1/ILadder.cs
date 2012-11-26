@@ -42,12 +42,13 @@ namespace Project1
             loaded = false;
             button_AddPlayer.Enabled = false;
             button_AddGame.Enabled = false;
-            this.Text = titleText;
+            this.Text = titleText;            
         }
 
         private void button_AddGame_Click(object sender, EventArgs e)
         {
-
+            // end successful game added
+            saveLadderToolStripMenuItem.Enabled = true;
         }
 
         private void button_AddPlayer_Click(object sender, EventArgs e)
@@ -65,7 +66,7 @@ namespace Project1
             eRungPosition rung = (eRungPosition)e.rung;
             ladder.AddPlayer(name, rank, rung);
             PopulatePlayerListBox();
-
+            saveLadderToolStripMenuItem.Enabled = true;
             button_AddGame.Enabled = (ladder.get_NumberOfPlayers() >= 2);
                 
         }
@@ -114,6 +115,7 @@ namespace Project1
             {
                 dataMngr.Save(ladder);
                 this.Text = dataMngr.name + " - " + titleText;
+                saveLadderToolStripMenuItem.Enabled = false;
             }
             
         }
@@ -132,8 +134,8 @@ namespace Project1
                 dataMngr.Load(tempName, out ladder);
                 this.Text = tempName + " - " + titleText;
                 loaded = true;
-                saveLadderToolStripMenuItem.Enabled = true;
                 PopulatePlayerListBox();
+                button_AddPlayer.Enabled = true;
             }
         }
 
