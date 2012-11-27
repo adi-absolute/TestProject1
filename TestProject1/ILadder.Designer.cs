@@ -184,7 +184,7 @@
             chartArea1.AxisY.ScaleView.Size = 4D;
             chartArea1.AxisY.ScrollBar.Enabled = false;
             chartArea1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            chartArea1.BorderColor = System.Drawing.Color.Transparent;
+            chartArea1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
             chartArea1.InnerPlotPosition.Auto = false;
             chartArea1.InnerPlotPosition.Height = 74.80259F;
             chartArea1.InnerPlotPosition.Width = 95F;
@@ -217,6 +217,7 @@
             chartArea2.AxisY.ScaleView.Size = 3D;
             chartArea2.AxisY.ScrollBar.Enabled = false;
             chartArea2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            chartArea2.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
             chartArea2.InnerPlotPosition.Auto = false;
             chartArea2.InnerPlotPosition.Height = 74.80259F;
             chartArea2.InnerPlotPosition.Width = 95F;
@@ -249,6 +250,7 @@
             chartArea3.AxisY.ScaleView.Size = 3D;
             chartArea3.AxisY.ScrollBar.Enabled = false;
             chartArea3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            chartArea3.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
             chartArea3.InnerPlotPosition.Auto = false;
             chartArea3.InnerPlotPosition.Height = 74.80259F;
             chartArea3.InnerPlotPosition.Width = 95F;
@@ -281,6 +283,7 @@
             chartArea4.AxisY.ScaleView.Size = 2D;
             chartArea4.AxisY.ScrollBar.Enabled = false;
             chartArea4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            chartArea4.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
             chartArea4.InnerPlotPosition.Auto = false;
             chartArea4.InnerPlotPosition.Height = 74.80259F;
             chartArea4.InnerPlotPosition.Width = 95F;
@@ -291,7 +294,7 @@
             chartArea4.Position.Height = 12F;
             chartArea4.Position.Width = 90F;
             chartArea4.Position.X = 3F;
-            chartArea4.Position.Y = 60F;
+            chartArea4.Position.Y = 62F;
             chartArea5.AxisX.Interval = 1D;
             chartArea5.AxisX.IntervalOffset = -0.5D;
             chartArea5.AxisX.MajorGrid.IntervalOffset = 0D;
@@ -313,6 +316,7 @@
             chartArea5.AxisY.ScaleView.Size = 2D;
             chartArea5.AxisY.ScrollBar.Enabled = false;
             chartArea5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            chartArea5.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
             chartArea5.InnerPlotPosition.Auto = false;
             chartArea5.InnerPlotPosition.Height = 74.80259F;
             chartArea5.InnerPlotPosition.Width = 95F;
@@ -323,7 +327,7 @@
             chartArea5.Position.Height = 12F;
             chartArea5.Position.Width = 90F;
             chartArea5.Position.X = 3F;
-            chartArea5.Position.Y = 74F;
+            chartArea5.Position.Y = 77F;
             this.chart1.ChartAreas.Add(chartArea1);
             this.chart1.ChartAreas.Add(chartArea2);
             this.chart1.ChartAreas.Add(chartArea3);
