@@ -143,6 +143,11 @@ namespace Project1
         {
             tempName = openFileDialog1.FileName;
         }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
