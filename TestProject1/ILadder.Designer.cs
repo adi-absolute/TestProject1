@@ -29,14 +29,16 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel1 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
+            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel2 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 10D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint2 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 20D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 1D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint2 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 2D);
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -163,12 +165,27 @@
             // chart1
             // 
             this.chart1.BackColor = System.Drawing.Color.Moccasin;
+            customLabel1.ForeColor = System.Drawing.Color.Black;
+            customLabel1.Text = "a";
+            customLabel2.ForeColor = System.Drawing.Color.Black;
+            customLabel2.FromPosition = 2D;
+            customLabel2.Text = "bbb.";
+            customLabel2.ToPosition = 3D;
+            chartArea1.AxisX.CustomLabels.Add(customLabel1);
+            chartArea1.AxisX.CustomLabels.Add(customLabel2);
             chartArea1.AxisX.Interval = 1D;
             chartArea1.AxisX.IntervalOffset = -0.5D;
+            chartArea1.AxisX.IsLabelAutoFit = false;
+            chartArea1.AxisX.IsMarksNextToAxis = false;
             chartArea1.AxisX.MajorGrid.IntervalOffset = 0D;
             chartArea1.AxisX.MajorTickMark.Enabled = false;
-            chartArea1.AxisX.ScaleView.Position = 0D;
+            chartArea1.AxisX.Maximum = 9.5D;
+            chartArea1.AxisX.Minimum = 0.5D;
+            chartArea1.AxisX.ScaleView.MinSize = 9D;
             chartArea1.AxisX.ScaleView.Size = 9D;
+            chartArea1.AxisX.ScaleView.SizeType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea1.AxisX.ScaleView.Zoomable = false;
+            chartArea1.AxisX.ScrollBar.Enabled = false;
             chartArea1.AxisY.Interval = 1D;
             chartArea1.AxisY.IntervalOffset = -0.5D;
             chartArea1.AxisY.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
@@ -343,7 +360,6 @@
             series1.IsVisibleInLegend = false;
             series1.Legend = "Legend1";
             series1.Name = "Series1";
-            dataPoint1.IsValueShownAsLabel = false;
             series1.Points.Add(dataPoint1);
             series1.Points.Add(dataPoint2);
             series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Single;
