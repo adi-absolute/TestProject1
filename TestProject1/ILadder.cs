@@ -30,6 +30,7 @@ namespace Project1
             "Top Rung", "Second Rung", "Third Rung", "Fourth Rung"
         };
         public Ladder ladder;
+        GUIRenderer meow;
 
         bool loaded;
         string tempName;
@@ -42,7 +43,9 @@ namespace Project1
             loaded = false;
             button_AddPlayer.Enabled = false;
             button_AddGame.Enabled = false;
-            this.Text = titleText;            
+            this.Text = titleText;
+            meow = new GUIRenderer(chart1);
+            meow.R2();
         }
 
         private void button_AddGame_Click(object sender, EventArgs e)

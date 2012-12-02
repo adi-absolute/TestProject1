@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataManager.cs" />
+    <Compile Include="GUIRenderer.cs" />
     <Compile Include="IAddPlayer.cs">
       <SubType>Form</SubType>
     </Compile>

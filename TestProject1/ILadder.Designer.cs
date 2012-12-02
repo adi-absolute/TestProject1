@@ -215,10 +215,13 @@
             chartArea1.Position.Y = 2F;
             chartArea2.AxisX.Interval = 1D;
             chartArea2.AxisX.IntervalOffset = -0.5D;
+            chartArea2.AxisX.MajorGrid.Interval = 1D;
             chartArea2.AxisX.MajorGrid.IntervalOffset = 0D;
             chartArea2.AxisX.MajorTickMark.Enabled = false;
-            chartArea2.AxisX.ScaleView.Position = 0D;
+            chartArea2.AxisX.Maximum = 9.5D;
+            chartArea2.AxisX.Minimum = 0.5D;
             chartArea2.AxisX.ScaleView.Size = 9D;
+            chartArea2.AxisX.ScaleView.SizeType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
             chartArea2.AxisY.Interval = 1D;
             chartArea2.AxisY.IntervalOffset = -0.5D;
             chartArea2.AxisY.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
@@ -250,7 +253,8 @@
             chartArea3.AxisX.IntervalOffset = -0.5D;
             chartArea3.AxisX.MajorGrid.IntervalOffset = 0D;
             chartArea3.AxisX.MajorTickMark.Enabled = false;
-            chartArea3.AxisX.ScaleView.Position = 0D;
+            chartArea3.AxisX.Maximum = 9.5D;
+            chartArea3.AxisX.Minimum = 0.5D;
             chartArea3.AxisX.ScaleView.Size = 9D;
             chartArea3.AxisY.Interval = 1D;
             chartArea3.AxisY.IntervalOffset = -0.5D;
@@ -283,7 +287,8 @@
             chartArea4.AxisX.IntervalOffset = -0.5D;
             chartArea4.AxisX.MajorGrid.IntervalOffset = 0D;
             chartArea4.AxisX.MajorTickMark.Enabled = false;
-            chartArea4.AxisX.ScaleView.Position = 0D;
+            chartArea4.AxisX.Maximum = 9.5D;
+            chartArea4.AxisX.Minimum = 0.5D;
             chartArea4.AxisX.ScaleView.Size = 9D;
             chartArea4.AxisY.Interval = 1D;
             chartArea4.AxisY.IntervalOffset = -0.5D;
@@ -316,7 +321,8 @@
             chartArea5.AxisX.IntervalOffset = -0.5D;
             chartArea5.AxisX.MajorGrid.IntervalOffset = 0D;
             chartArea5.AxisX.MajorTickMark.Enabled = false;
-            chartArea5.AxisX.ScaleView.Position = 0D;
+            chartArea5.AxisX.Maximum = 9.5D;
+            chartArea5.AxisX.Minimum = 0.5D;
             chartArea5.AxisX.ScaleView.Size = 9D;
             chartArea5.AxisY.Interval = 1D;
             chartArea5.AxisY.IntervalOffset = -0.5D;
@@ -359,7 +365,17 @@
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
             series1.IsVisibleInLegend = false;
             series1.Legend = "Legend1";
+            series1.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Star4;
             series1.Name = "Series1";
+            dataPoint1.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.None;
+            dataPoint1.BackImageWrapMode = System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Tile;
+            dataPoint1.Color = System.Drawing.Color.Fuchsia;
+            dataPoint1.Label = "Adi";
+            dataPoint1.LegendText = "";
+            dataPoint1.MarkerColor = System.Drawing.Color.Yellow;
+            dataPoint1.MarkerImageTransparentColor = System.Drawing.Color.Transparent;
+            dataPoint1.MarkerSize = 6;
+            dataPoint1.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Diamond;
             series1.Points.Add(dataPoint1);
             series1.Points.Add(dataPoint2);
             series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Single;
@@ -424,7 +440,7 @@
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        public System.Windows.Forms.DataVisualization.Charting.Chart chart1;
 
     }
 }
