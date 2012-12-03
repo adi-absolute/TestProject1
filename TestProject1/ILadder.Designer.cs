@@ -173,6 +173,7 @@
             customLabel2.ToPosition = 3D;
             chartArea1.AxisX.CustomLabels.Add(customLabel1);
             chartArea1.AxisX.CustomLabels.Add(customLabel2);
+            chartArea1.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
             chartArea1.AxisX.Interval = 1D;
             chartArea1.AxisX.IntervalOffset = -0.5D;
             chartArea1.AxisX.IsLabelAutoFit = false;
@@ -186,6 +187,7 @@
             chartArea1.AxisX.ScaleView.SizeType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
             chartArea1.AxisX.ScaleView.Zoomable = false;
             chartArea1.AxisX.ScrollBar.Enabled = false;
+            chartArea1.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
             chartArea1.AxisY.Interval = 1D;
             chartArea1.AxisY.IntervalOffset = -0.5D;
             chartArea1.AxisY.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
@@ -213,6 +215,7 @@
             chartArea1.Position.Width = 90F;
             chartArea1.Position.X = 3F;
             chartArea1.Position.Y = 2F;
+            chartArea2.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
             chartArea2.AxisX.Interval = 1D;
             chartArea2.AxisX.IntervalOffset = -0.5D;
             chartArea2.AxisX.MajorGrid.Interval = 1D;
@@ -222,6 +225,7 @@
             chartArea2.AxisX.Minimum = 0.5D;
             chartArea2.AxisX.ScaleView.Size = 9D;
             chartArea2.AxisX.ScaleView.SizeType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea2.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
             chartArea2.AxisY.Interval = 1D;
             chartArea2.AxisY.IntervalOffset = -0.5D;
             chartArea2.AxisY.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
@@ -249,6 +253,7 @@
             chartArea2.Position.Width = 90F;
             chartArea2.Position.X = 3F;
             chartArea2.Position.Y = 24F;
+            chartArea3.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
             chartArea3.AxisX.Interval = 1D;
             chartArea3.AxisX.IntervalOffset = -0.5D;
             chartArea3.AxisX.MajorGrid.IntervalOffset = 0D;
@@ -256,6 +261,7 @@
             chartArea3.AxisX.Maximum = 9.5D;
             chartArea3.AxisX.Minimum = 0.5D;
             chartArea3.AxisX.ScaleView.Size = 9D;
+            chartArea3.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
             chartArea3.AxisY.Interval = 1D;
             chartArea3.AxisY.IntervalOffset = -0.5D;
             chartArea3.AxisY.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
@@ -283,6 +289,7 @@
             chartArea3.Position.Width = 90F;
             chartArea3.Position.X = 3F;
             chartArea3.Position.Y = 42F;
+            chartArea4.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
             chartArea4.AxisX.Interval = 1D;
             chartArea4.AxisX.IntervalOffset = -0.5D;
             chartArea4.AxisX.MajorGrid.IntervalOffset = 0D;
@@ -290,6 +297,7 @@
             chartArea4.AxisX.Maximum = 9.5D;
             chartArea4.AxisX.Minimum = 0.5D;
             chartArea4.AxisX.ScaleView.Size = 9D;
+            chartArea4.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
             chartArea4.AxisY.Interval = 1D;
             chartArea4.AxisY.IntervalOffset = -0.5D;
             chartArea4.AxisY.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
@@ -317,6 +325,7 @@
             chartArea4.Position.Width = 90F;
             chartArea4.Position.X = 3F;
             chartArea4.Position.Y = 62F;
+            chartArea5.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
             chartArea5.AxisX.Interval = 1D;
             chartArea5.AxisX.IntervalOffset = -0.5D;
             chartArea5.AxisX.MajorGrid.IntervalOffset = 0D;
@@ -324,6 +333,7 @@
             chartArea5.AxisX.Maximum = 9.5D;
             chartArea5.AxisX.Minimum = 0.5D;
             chartArea5.AxisX.ScaleView.Size = 9D;
+            chartArea5.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
             chartArea5.AxisY.Interval = 1D;
             chartArea5.AxisY.IntervalOffset = -0.5D;
             chartArea5.AxisY.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;

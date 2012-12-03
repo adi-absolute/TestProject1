@@ -45,7 +45,9 @@ namespace Project1
             button_AddGame.Enabled = false;
             this.Text = titleText;
             meow = new GUIRenderer(chart1);
-            meow.R2();
+            meow.R2("one");
+            meow.R2("two");
+            
         }
 
         private void button_AddGame_Click(object sender, EventArgs e)
@@ -69,6 +71,7 @@ namespace Project1
             eRungPosition rung = (eRungPosition)e.rung;
             ladder.AddPlayer(name, rank, rung);
             PopulatePlayerListBox();
+            meow.ShowPlayer(new Player(name, rank, rung));
             saveLadderToolStripMenuItem.Enabled = true;
             button_AddGame.Enabled = (ladder.get_NumberOfPlayers() >= 2);
                 
