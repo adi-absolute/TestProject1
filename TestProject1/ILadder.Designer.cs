@@ -32,6 +32,7 @@
             System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel1 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
             System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel2 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.CustomLabel customLabel3 = new System.Windows.Forms.DataVisualization.Charting.CustomLabel();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
@@ -166,11 +167,12 @@
             // 
             this.chart1.BackColor = System.Drawing.Color.Moccasin;
             customLabel1.ForeColor = System.Drawing.Color.Black;
-            customLabel1.Text = "a";
+            customLabel1.FromPosition = 1D;
+            customLabel1.Text = "aaa";
             customLabel2.ForeColor = System.Drawing.Color.Black;
-            customLabel2.FromPosition = 2D;
-            customLabel2.Text = "bbb.";
-            customLabel2.ToPosition = 3D;
+            customLabel2.FromPosition = 1D;
+            customLabel2.Text = "bbb";
+            customLabel2.ToPosition = 1D;
             chartArea1.AxisX.CustomLabels.Add(customLabel1);
             chartArea1.AxisX.CustomLabels.Add(customLabel2);
             chartArea1.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
@@ -215,6 +217,10 @@
             chartArea1.Position.Width = 90F;
             chartArea1.Position.X = 3F;
             chartArea1.Position.Y = 2F;
+            customLabel3.FromPosition = 0.5D;
+            customLabel3.Text = "t1";
+            customLabel3.ToPosition = 1.5D;
+            chartArea2.AxisX.CustomLabels.Add(customLabel3);
             chartArea2.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
             chartArea2.AxisX.Interval = 1D;
             chartArea2.AxisX.IntervalOffset = -0.5D;

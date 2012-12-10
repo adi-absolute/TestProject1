@@ -30,7 +30,7 @@ namespace Project1
             "Top Rung", "Second Rung", "Third Rung", "Fourth Rung"
         };
         public Ladder ladder;
-        GUIRenderer meow;
+        GUIRenderer ladderRenderer;
 
         bool loaded;
         string tempName;
@@ -44,9 +44,9 @@ namespace Project1
             button_AddPlayer.Enabled = false;
             button_AddGame.Enabled = false;
             this.Text = titleText;
-            meow = new GUIRenderer(chart1);
-            meow.R2("one");
-            meow.R2("two");
+            ladderRenderer = new GUIRenderer(chart1);
+            ladderRenderer.R2("one");
+            ladderRenderer.R2("two");
             
         }
 
@@ -71,7 +71,9 @@ namespace Project1
             eRungPosition rung = (eRungPosition)e.rung;
             ladder.AddPlayer(name, rank, rung);
             PopulatePlayerListBox();
-            meow.ShowPlayer(new Player(name, rank, rung));
+            //ladderRenderer.ShowPlayer(new Player(name, rank, rung));
+            ladderRenderer.AddPointToChart(name, new Rank(rank, rung));
+            
             saveLadderToolStripMenuItem.Enabled = true;
             button_AddGame.Enabled = (ladder.get_NumberOfPlayers() >= 2);
                 
