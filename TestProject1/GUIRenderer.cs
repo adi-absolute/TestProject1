@@ -16,7 +16,7 @@ namespace Project1
         chartType myChart;
         seriesType[] dataSeries = new seriesType[5];
         labelType[,] xLabel = new labelType[5,9];
-
+        
         public GUIRenderer(ILadder l)
         {
             myLadder = l;
@@ -50,10 +50,8 @@ namespace Project1
                     myChart.ChartAreas[i].AxisX.CustomLabels.Add(xLabel[i, j]);
                 }
                 n += 18;
-
             }
 
-            //myChart.ChartAreas[0].
         }
 
         public void AddPointToChart(string label, Rank rank)

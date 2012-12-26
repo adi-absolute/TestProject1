@@ -36,7 +36,6 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 1D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint2 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 2D);
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -182,6 +181,7 @@
             chartArea1.AxisY.IntervalOffset = -0.5D;
             chartArea1.AxisY.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
             chartArea1.AxisY.IsReversed = true;
+            chartArea1.AxisY.LabelStyle.Enabled = false;
             chartArea1.AxisY.MajorGrid.Interval = 1D;
             chartArea1.AxisY.MajorGrid.IntervalOffset = 0.5D;
             chartArea1.AxisY.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
@@ -220,6 +220,7 @@
             chartArea2.AxisY.IntervalOffset = -0.5D;
             chartArea2.AxisY.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
             chartArea2.AxisY.IsReversed = true;
+            chartArea2.AxisY.LabelStyle.Enabled = false;
             chartArea2.AxisY.MajorGrid.Interval = 1D;
             chartArea2.AxisY.MajorGrid.IntervalOffset = 0.5D;
             chartArea2.AxisY.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
@@ -256,6 +257,7 @@
             chartArea3.AxisY.IntervalOffset = -0.5D;
             chartArea3.AxisY.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
             chartArea3.AxisY.IsReversed = true;
+            chartArea3.AxisY.LabelStyle.Enabled = false;
             chartArea3.AxisY.MajorGrid.Interval = 1D;
             chartArea3.AxisY.MajorGrid.IntervalOffset = 0.5D;
             chartArea3.AxisY.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
@@ -292,6 +294,7 @@
             chartArea4.AxisY.IntervalOffset = -0.5D;
             chartArea4.AxisY.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
             chartArea4.AxisY.IsReversed = true;
+            chartArea4.AxisY.LabelStyle.Enabled = false;
             chartArea4.AxisY.MajorGrid.Interval = 1D;
             chartArea4.AxisY.MajorGrid.IntervalOffset = 0.5D;
             chartArea4.AxisY.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
@@ -328,6 +331,7 @@
             chartArea5.AxisY.IntervalOffset = -0.5D;
             chartArea5.AxisY.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
             chartArea5.AxisY.IsReversed = true;
+            chartArea5.AxisY.LabelStyle.Enabled = false;
             chartArea5.AxisY.MajorGrid.Interval = 1D;
             chartArea5.AxisY.MajorGrid.IntervalOffset = 0.5D;
             chartArea5.AxisY.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
@@ -372,12 +376,12 @@
             dataPoint1.Color = System.Drawing.Color.Fuchsia;
             dataPoint1.Label = "Adi";
             dataPoint1.LegendText = "";
-            dataPoint1.MarkerColor = System.Drawing.Color.Yellow;
+            dataPoint1.MarkerBorderColor = System.Drawing.Color.Red;
+            dataPoint1.MarkerColor = System.Drawing.Color.Lime;
             dataPoint1.MarkerImageTransparentColor = System.Drawing.Color.Transparent;
-            dataPoint1.MarkerSize = 6;
-            dataPoint1.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Diamond;
+            dataPoint1.MarkerSize = 8;
+            dataPoint1.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Square;
             series1.Points.Add(dataPoint1);
-            series1.Points.Add(dataPoint2);
             series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Single;
             series2.ChartArea = "ChartArea2";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
