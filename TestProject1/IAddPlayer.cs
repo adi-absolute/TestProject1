@@ -26,12 +26,12 @@ namespace Project1
         {
             radioButton_RungTop.Checked = true;
 
-            if (listBox_Ranks.SelectedIndex < 10)
+            if (listBox_Ranks.SelectedIndex < 9)
             {
                 radioButton_RungFourth.Enabled = true;
                 radioButton_RungThird.Enabled = true;
             }
-            else if (listBox_Ranks.SelectedIndex < 28)
+            else if (listBox_Ranks.SelectedIndex < 27)
             {
                 radioButton_RungFourth.Enabled = false;
                 radioButton_RungThird.Enabled = true;

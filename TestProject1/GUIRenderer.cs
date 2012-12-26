@@ -56,16 +56,16 @@ namespace Project1
 
         public void AddPointToChart(string label, Rank rank)
         {
-            int r1 = ((int)rank.RankNumber % 9) + 1;
-            int r2 = ((int)rank.RungPosition % 4) + 1;
-            int s1 = ((int)rank.RankNumber / 9);
-            pointType dP2 = new pointType(r1, r2);
+            int subRank = 9 - ((int)rank.RankNumber % 9);
+            int subRung = ((int)rank.RungPosition % 4);
+            int seriesNumber = ((int)rank.RankNumber / 9);
+            pointType dP2 = new pointType(subRank, subRung);
 
             dP2.Color = System.Drawing.Color.Fuchsia;
             dP2.Label = label;
             dP2.MarkerSize = 10;
 
-            dataSeries[s1].Points.Add(dP2);
+            dataSeries[seriesNumber].Points.Add(dP2);
         }
 
 
