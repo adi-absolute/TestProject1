@@ -72,8 +72,8 @@ namespace Project1
             ladder.AddPlayer(name, rank, rung);
             PopulatePlayerListBox();
             //ladderRenderer.ShowPlayer(new Player(name, rank, rung));
-            ladderRenderer.AddPointToChart(name, new Rank(rank, rung));
-            
+            //ladderRenderer.AddPointToChart(name, new Rank(rank, rung));
+            ladderRenderer.AddPlayerToChart(new Player(name, rank, rung));
             saveLadderToolStripMenuItem.Enabled = true;
             button_AddGame.Enabled = (ladder.get_NumberOfPlayers() >= 2);
                 

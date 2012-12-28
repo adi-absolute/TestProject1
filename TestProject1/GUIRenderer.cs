@@ -68,6 +68,23 @@ namespace Project1
             dataSeries[seriesNumber].Points.Add(dP2);
         }
 
+        public void AddPlayerToChart(Player p)
+        {
+            Rank rank = p.myRank;
+
+            int subRank = 9 - ((int)rank.RankNumber % 9);
+            int subRung = ((int)rank.RungPosition % 4);
+            int seriesNumber = ((int)rank.RankNumber / 9);
+            pointType dP2 = new pointType(subRank, subRung);
+
+            dP2.Color = System.Drawing.Color.Fuchsia;
+            dP2.Label = p.myName;
+            dP2.MarkerSize = 10;
+            dP2.Name = p.myID.ToString();
+
+            dataSeries[seriesNumber].Points.Add(dP2);
+        }
+
 
         public GUIRenderer(chartType chart)
         {

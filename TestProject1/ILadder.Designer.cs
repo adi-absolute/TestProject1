@@ -374,7 +374,8 @@
             dataPoint1.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.None;
             dataPoint1.BackImageWrapMode = System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Tile;
             dataPoint1.Color = System.Drawing.Color.Fuchsia;
-            dataPoint1.Label = "Adi";
+            dataPoint1.CustomProperties = "PointID=18";
+            dataPoint1.Label = "Example";
             dataPoint1.LegendText = "";
             dataPoint1.MarkerBorderColor = System.Drawing.Color.Red;
             dataPoint1.MarkerColor = System.Drawing.Color.Lime;
