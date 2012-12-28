@@ -45,8 +45,6 @@ namespace Project1
             button_AddGame.Enabled = false;
             this.Text = titleText;
             ladderRenderer = new GUIRenderer(chart1);
-            ladderRenderer.R2("one");
-            ladderRenderer.R2("two");
             
         }
 
@@ -71,7 +69,7 @@ namespace Project1
             eRungPosition rung = (eRungPosition)e.rung;
             ladder.AddPlayer(name, rank, rung);
             PopulatePlayerListBox();
-            //ladderRenderer.ShowPlayer(new Player(name, rank, rung));
+            
             //ladderRenderer.AddPointToChart(name, new Rank(rank, rung));
             ladderRenderer.AddPlayerToChart(new Player(name, rank, rung));
             saveLadderToolStripMenuItem.Enabled = true;
