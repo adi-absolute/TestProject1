@@ -85,6 +85,19 @@ namespace Project1
             dataSeries[seriesNumber].Points.Add(dP2);
         }
 
+        public void RemovePlayerFromChart(Player p)
+        {
+            Rank rank = p.myRank;
+
+            //int subRank = 9 - ((int)rank.RankNumber % 9);
+            //int subRung = ((int)rank.RungPosition % 4);
+            int seriesNumber = ((int)rank.RankNumber / 9);
+
+            pointType dP = dataSeries[seriesNumber].Points.FindByValue(p.myID);
+
+            dataSeries[seriesNumber].Points.Remove(dP);
+        }
+
 
         public GUIRenderer(chartType chart)
         {
