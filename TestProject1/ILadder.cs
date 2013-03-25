@@ -154,6 +154,18 @@ namespace Project1
         {
 
         }
+
+        private void button_RemovePlayer_Click(object sender, EventArgs e)
+        {
+            //IAddPlayer iPlayer = new IAddPlayer();
+            //iPlayer.PlayerAdded += new EventHandler(iPlayer_onPlayerAdded);
+            //iPlayer.ShowDialog();
+        }
+
+        private void listBox_PlayerList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            button_RemovePlayer.Enabled = true;
+        }
     }
 
 }
